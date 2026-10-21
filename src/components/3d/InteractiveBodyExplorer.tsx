@@ -153,10 +153,10 @@ export default function InteractiveBodyExplorer({ onOpenBooking }: { onOpenBooki
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
         <div className="max-w-2xl">
-          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#C6A56B] bg-[#064E4B] px-3.5 py-1.5 rounded-full inline-block mb-3 border border-[#C6A56B]/30 shadow-xs">
+          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#00AEEF] bg-[#0A3977] px-3.5 py-1.5 rounded-full inline-block mb-3 border border-[#00AEEF]/30 shadow-xs">
             Interactive Biomechanical Laboratory
           </span>
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#064E4B] leading-tight">
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#0A3977] leading-tight">
             Explore 3D Human Anatomy &amp; Injury Pathways
           </h2>
           <p className="mt-3 text-sm sm:text-base text-neutral-600 leading-relaxed">
@@ -169,28 +169,28 @@ export default function InteractiveBodyExplorer({ onOpenBooking }: { onOpenBooki
         <div className="flex flex-wrap items-center gap-2">
           <button
             onClick={() => setViewPreset("front")}
-            className="px-4 py-2 rounded-xl bg-white text-xs font-mono font-bold text-[#064E4B] border border-[#DCE9E3] hover:border-[#0F766E] shadow-sm hover:shadow-md transition-all active:scale-95"
+            className="px-4 py-2 rounded-xl bg-white text-xs font-mono font-bold text-[#0A3977] border border-[#E0F2FE] hover:border-[#0077B6] shadow-sm hover:shadow-md transition-all active:scale-95"
           >
             Anterior (Front)
           </button>
           <button
             onClick={() => setViewPreset("back")}
-            className="px-4 py-2 rounded-xl bg-white text-xs font-mono font-bold text-[#064E4B] border border-[#DCE9E3] hover:border-[#0F766E] shadow-sm hover:shadow-md transition-all active:scale-95"
+            className="px-4 py-2 rounded-xl bg-white text-xs font-mono font-bold text-[#0A3977] border border-[#E0F2FE] hover:border-[#0077B6] shadow-sm hover:shadow-md transition-all active:scale-95"
           >
             Posterior (Back)
           </button>
           <button
             onClick={() => setViewPreset("lateral")}
-            className="px-4 py-2 rounded-xl bg-white text-xs font-mono font-bold text-[#064E4B] border border-[#DCE9E3] hover:border-[#0F766E] shadow-sm hover:shadow-md transition-all active:scale-95"
+            className="px-4 py-2 rounded-xl bg-white text-xs font-mono font-bold text-[#0A3977] border border-[#E0F2FE] hover:border-[#0077B6] shadow-sm hover:shadow-md transition-all active:scale-95"
           >
             Lateral (Profile)
           </button>
           <button
             onClick={handleReset}
-            className="px-4 py-2 rounded-xl bg-[#064E4B] text-xs font-mono font-bold text-[#F5E6CA] border border-[#C6A56B]/50 flex items-center gap-1.5 hover:bg-[#0F766E] shadow-md transition-all active:scale-95"
+            className="px-4 py-2 rounded-xl bg-[#0A3977] text-xs font-mono font-bold text-[#E0F2FE] border border-[#00AEEF]/50 flex items-center gap-1.5 hover:bg-[#0077B6] shadow-md transition-all active:scale-95"
             title="Reset 3D camera to default"
           >
-            <RotateCcw className="w-3.5 h-3.5 text-[#C6A56B]" />
+            <RotateCcw className="w-3.5 h-3.5 text-[#00AEEF]" />
             <span>Reset View</span>
           </button>
         </div>
@@ -199,11 +199,11 @@ export default function InteractiveBodyExplorer({ onOpenBooking }: { onOpenBooki
       {/* Main 3D Lab Studio */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
         {/* Left Column: 3D Canvas Studio */}
-        <div className="lg:col-span-7 relative h-[560px] sm:h-[640px] rounded-3xl overflow-hidden bg-gradient-to-b from-[#042624] via-[#064E4B] to-[#031D1B] border border-[#C6A56B]/30 shadow-2xl">
+        <div className="lg:col-span-7 relative h-[560px] sm:h-[640px] rounded-3xl overflow-hidden bg-gradient-to-b from-[#061B36] via-[#0A3977] to-[#06152B] border border-[#00AEEF]/30 shadow-2xl">
           {/* Top telemetry status bar */}
           <div className="absolute top-4 left-4 right-4 z-20 flex flex-wrap items-center justify-between gap-3 pointer-events-none">
-            <div className="pointer-events-auto flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-mono text-[#DCE9E3]">
-              <div className="w-2 h-2 rounded-full bg-[#14B8A6] animate-pulse" />
+            <div className="pointer-events-auto flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-mono text-[#E0F2FE]">
+              <div className="w-2 h-2 rounded-full bg-[#00AEEF] animate-pulse" />
               <span>LAB MODE: 360° SPATIAL INSPECTION</span>
             </div>
 
@@ -212,7 +212,7 @@ export default function InteractiveBodyExplorer({ onOpenBooking }: { onOpenBooki
                 onClick={() => setAutoRotate(!autoRotate)}
                 className={`px-3 py-1.5 rounded-full text-xs font-mono font-medium backdrop-blur-md transition-all ${
                   autoRotate
-                    ? "bg-[#C6A56B] text-[#064E4B] font-bold"
+                    ? "bg-[#00AEEF] text-[#0A3977] font-bold"
                     : "bg-white/10 text-white border border-white/20 hover:bg-white/20"
                 }`}
               >
@@ -231,8 +231,8 @@ export default function InteractiveBodyExplorer({ onOpenBooking }: { onOpenBooki
                   onClick={() => setActiveRegion(key)}
                   className={`px-3 py-1.5 rounded-xl text-xs font-mono font-bold transition-all ${
                     isActive
-                      ? "bg-[#C6A56B] text-[#064E4B] shadow-md scale-105"
-                      : "bg-[#064E4B]/80 text-[#FAF8F5] border border-white/20 hover:bg-[#0F766E]"
+                      ? "bg-[#00AEEF] text-[#0A3977] shadow-md scale-105"
+                      : "bg-[#0A3977]/80 text-[#F0F8FF] border border-white/20 hover:bg-[#0077B6]"
                   }`}
                 >
                   {data.anatomicalCode}
@@ -250,9 +250,9 @@ export default function InteractiveBodyExplorer({ onOpenBooking }: { onOpenBooki
           >
             <ambientLight intensity={0.7} />
             <directionalLight position={[6, 8, 6]} intensity={1.4} castShadow />
-            <directionalLight position={[-6, -4, -4]} intensity={0.6} color="#0F766E" />
+            <directionalLight position={[-6, -4, -4]} intensity={0.6} color="#0077B6" />
             <pointLight position={[0, 0, 4]} intensity={0.8} color="#FFF8EB" />
-            <pointLight position={[0, 3, 2]} intensity={0.6} color="#C6A56B" />
+            <pointLight position={[0, 3, 2]} intensity={0.6} color="#00AEEF" />
 
             <Float speed={1.2} rotationIntensity={0.15} floatIntensity={0.25}>
               <AnatomicalSpine3D
@@ -277,26 +277,26 @@ export default function InteractiveBodyExplorer({ onOpenBooking }: { onOpenBooki
         </div>
 
         {/* Right Column: In-Depth Diagnostic Dossier */}
-        <div className="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-8 border border-[#DCE9E3] shadow-lg flex flex-col justify-between">
+        <div className="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-8 border border-[#E0F2FE] shadow-lg flex flex-col justify-between">
           <div className="space-y-6">
             {/* Header Badge */}
-            <div className="flex items-center justify-between pb-4 border-b border-[#DCE9E3]">
-              <span className="text-[11px] font-mono font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#064E4B] text-[#C6A56B]">
+            <div className="flex items-center justify-between pb-4 border-b border-[#E0F2FE]">
+              <span className="text-[11px] font-mono font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#0A3977] text-[#00AEEF]">
                 {regionInfo.anatomicalCode}
               </span>
-              <span className="text-xs font-semibold text-[#0F766E]">{regionInfo.category}</span>
+              <span className="text-xs font-semibold text-[#0077B6]">{regionInfo.category}</span>
             </div>
 
             {/* Region Title */}
             <div>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#064E4B] leading-tight">
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#0A3977] leading-tight">
                 {regionInfo.name}
               </h3>
             </div>
 
             {/* Biomechanical Root Trigger */}
-            <div className="p-4 rounded-2xl bg-[#FAF8F5] border border-[#DCE9E3] space-y-1.5">
-              <span className="text-[10px] font-mono uppercase font-bold text-[#0F766E] block">
+            <div className="p-4 rounded-2xl bg-[#F0F8FF] border border-[#E0F2FE] space-y-1.5">
+              <span className="text-[10px] font-mono uppercase font-bold text-[#0077B6] block">
                 Biomechanical Dysfunction Trigger:
               </span>
               <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed">
@@ -312,7 +312,7 @@ export default function InteractiveBodyExplorer({ onOpenBooking }: { onOpenBooki
               <ul className="space-y-2">
                 {regionInfo.symptoms.map((sym, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-xs text-neutral-800">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#C6A56B] shrink-0 mt-1.5" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#00AEEF] shrink-0 mt-1.5" />
                     <span>{sym}</span>
                   </li>
                 ))}
@@ -321,13 +321,13 @@ export default function InteractiveBodyExplorer({ onOpenBooking }: { onOpenBooki
 
             {/* Targeted Physiotherapeutic Protocol */}
             <div className="space-y-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#064E4B] block font-mono">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#0A3977] block font-mono">
                 Dr. Sakshi&apos;s Rehabilitation Protocol:
               </span>
               <ul className="space-y-2">
                 {regionInfo.rehabProtocol.map((protocol, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-xs text-neutral-800 font-medium">
-                    <CheckCircle2 className="w-4 h-4 text-[#0F766E] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#0077B6] shrink-0 mt-0.5" />
                     <span>{protocol}</span>
                   </li>
                 ))}
@@ -336,17 +336,17 @@ export default function InteractiveBodyExplorer({ onOpenBooking }: { onOpenBooki
           </div>
 
           {/* Action CTAs */}
-          <div className="pt-6 mt-6 border-t border-[#DCE9E3] flex flex-col sm:flex-row items-center gap-3">
+          <div className="pt-6 mt-6 border-t border-[#E0F2FE] flex flex-col sm:flex-row items-center gap-3">
             <button
               onClick={onOpenBooking}
-              className="w-full sm:flex-1 py-3 px-5 rounded-xl bg-[#064E4B] hover:bg-[#0F766E] text-white font-semibold text-xs transition-all shadow-md flex items-center justify-center gap-2"
+              className="w-full sm:flex-1 py-3 px-5 rounded-xl bg-[#0A3977] hover:bg-[#0077B6] text-white font-semibold text-xs transition-all shadow-md flex items-center justify-center gap-2"
             >
-              <Calendar className="w-4 h-4 text-[#C6A56B]" />
+              <Calendar className="w-4 h-4 text-[#00AEEF]" />
               <span>Schedule Targeted Care</span>
             </button>
             <a
               href={`/services/${regionInfo.recommendedServiceSlug}`}
-              className="w-full sm:w-auto py-3 px-4 rounded-xl border border-[#DCE9E3] hover:border-[#0F766E] text-[#064E4B] text-xs font-semibold text-center transition-colors"
+              className="w-full sm:w-auto py-3 px-4 rounded-xl border border-[#E0F2FE] hover:border-[#0077B6] text-[#0A3977] text-xs font-semibold text-center transition-colors"
             >
               Service Protocol &rarr;
             </a>

@@ -38,7 +38,7 @@ export default function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
         <li>
           <Link
             href="/"
-            className="flex items-center gap-1 hover:text-[#064E4B] transition-colors"
+            className="flex items-center gap-1 hover:text-[#0A3977] transition-colors"
           >
             <Home className="w-3.5 h-3.5" />
             <span>Home</span>
@@ -50,13 +50,13 @@ export default function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
             <li key={index} className="flex items-center gap-1.5">
               <ChevronRight className="w-3.5 h-3.5 text-neutral-400" />
               {isLast || !item.href ? (
-                <span className="font-semibold text-[#064E4B] truncate max-w-[200px] sm:max-w-md">
+                <span className="font-semibold text-[#0A3977] truncate max-w-[200px] sm:max-w-md">
                   {item.label}
                 </span>
               ) : (
                 <Link
                   href={item.href}
-                  className="hover:text-[#064E4B] transition-colors truncate max-w-[150px]"
+                  className="hover:text-[#0A3977] transition-colors truncate max-w-[150px]"
                 >
                   {item.label}
                 </Link>

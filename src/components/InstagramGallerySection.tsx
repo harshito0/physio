@@ -39,8 +39,8 @@ export const INSTAGRAM_POSTS: InstagramPost[] = [
     likes: "1,480",
     comments: "62",
     tags: ["#CervicalSpondylosis", "#DeskPosture", "#DrSakshiPhysio", "#NeckPainRelief"],
-    gradient: "from-[#064E4B] via-[#042624] to-[#0F766E]",
-    accent: "#5EEAD4",
+    gradient: "from-[#0A3977] via-[#061B36] to-[#0077B6]",
+    accent: "#7DD3FC",
   },
   {
     id: "insta-sciatica",
@@ -52,8 +52,8 @@ export const INSTAGRAM_POSTS: InstagramPost[] = [
     likes: "2,840",
     comments: "115",
     tags: ["#SciaticaRelief", "#McKenzieMethod", "#LumbarSpine", "#ZenlifePhysio"],
-    gradient: "from-[#0F766E] via-[#064E4B] to-[#042624]",
-    accent: "#C6A56B",
+    gradient: "from-[#0077B6] via-[#0A3977] to-[#061B36]",
+    accent: "#00AEEF",
   },
   {
     id: "insta-cupping",
@@ -65,8 +65,8 @@ export const INSTAGRAM_POSTS: InstagramPost[] = [
     likes: "1,920",
     comments: "74",
     tags: ["#CuppingTherapy", "#MyofascialRelease", "#UpperBackPain", "#SportsRehab"],
-    gradient: "from-[#042624] via-[#064E4B] to-[#021816]",
-    accent: "#E5C687",
+    gradient: "from-[#061B36] via-[#0A3977] to-[#040D1A]",
+    accent: "#38BDF8",
   },
   {
     id: "insta-shoulder",
@@ -78,8 +78,8 @@ export const INSTAGRAM_POSTS: InstagramPost[] = [
     likes: "1,670",
     comments: "58",
     tags: ["#FrozenShoulder", "#RotatorCuffRehab", "#ShoulderPain", "#DrSakshi"],
-    gradient: "from-[#064E4B] via-[#0F766E] to-[#042624]",
-    accent: "#5EEAD4",
+    gradient: "from-[#0A3977] via-[#0077B6] to-[#061B36]",
+    accent: "#7DD3FC",
   },
   {
     id: "insta-nutrition",
@@ -90,8 +90,8 @@ export const INSTAGRAM_POSTS: InstagramPost[] = [
     likes: "2,130",
     comments: "89",
     tags: ["#ClinicalNutrition", "#JointCartilage", "#AntiInflammatoryDiet", "#ZenlifeHealth"],
-    gradient: "from-[#042624] via-[#064E4B] to-[#C6A56B]/40",
-    accent: "#C6A56B",
+    gradient: "from-[#061B36] via-[#0A3977] to-[#00AEEF]/40",
+    accent: "#00AEEF",
   },
   {
     id: "insta-return-to-play",
@@ -103,8 +103,8 @@ export const INSTAGRAM_POSTS: InstagramPost[] = [
     likes: "3,260",
     comments: "142",
     tags: ["#SportsPhysio", "#ReturnToPlay", "#AgilityTesting", "#LigamentRehab"],
-    gradient: "from-[#064E4B] via-[#042624] to-[#0F766E]",
-    accent: "#5EEAD4",
+    gradient: "from-[#0A3977] via-[#061B36] to-[#0077B6]",
+    accent: "#7DD3FC",
   },
 ];
 
@@ -118,16 +118,16 @@ export default function InstagramGallerySection() {
   return (
     <div className="space-y-10">
       {/* Instagram Profile Showcase Header Card */}
-      <div className="rounded-3xl p-6 sm:p-8 bg-gradient-to-br from-[#064E4B] via-[#042624] to-[#021816] text-white border border-[#C6A56B]/40 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="rounded-3xl p-6 sm:p-8 bg-gradient-to-br from-[#0A3977] via-[#061B36] to-[#040D1A] text-white border border-[#00AEEF]/40 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 text-center sm:text-left">
           {/* Instagram Gradient Ring Avatar */}
           <div className="relative p-1 rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] shadow-lg shrink-0">
-            <div className="w-18 h-18 sm:w-20 sm:h-20 rounded-full bg-[#042624] p-1 flex items-center justify-center">
-              <div className="w-full h-full rounded-full bg-gradient-to-br from-[#0F766E] to-[#C6A56B] flex items-center justify-center text-white">
+            <div className="w-18 h-18 sm:w-20 sm:h-20 rounded-full bg-[#061B36] p-1 flex items-center justify-center">
+              <div className="w-full h-full rounded-full bg-gradient-to-br from-[#0077B6] to-[#00AEEF] flex items-center justify-center text-white">
                 <InstagramIcon className="w-9 h-9" />
               </div>
             </div>
-            <span className="absolute bottom-1 right-1 w-5 h-5 rounded-full bg-[#14B8A6] border-2 border-[#042624] flex items-center justify-center text-[10px] font-bold">
+            <span className="absolute bottom-1 right-1 w-5 h-5 rounded-full bg-[#00AEEF] border-2 border-[#061B36] flex items-center justify-center text-[10px] font-bold">
               ✓
             </span>
           </div>
@@ -138,17 +138,17 @@ export default function InstagramGallerySection() {
               <h3 className="font-serif text-2xl font-bold text-white tracking-wide">
                 @{clinicInfo.instagramHandle}
               </h3>
-              <span className="px-2.5 py-0.5 rounded-full bg-[#C6A56B]/20 border border-[#C6A56B] text-[#F5E6CA] text-[10px] font-mono font-bold uppercase">
+              <span className="px-2.5 py-0.5 rounded-full bg-[#00AEEF]/20 border border-[#00AEEF] text-[#E0F2FE] text-[10px] font-mono font-bold uppercase">
                 Official Clinical Feed
               </span>
             </div>
 
-            <p className="text-xs sm:text-sm text-[#DCE9E3] max-w-xl">
+            <p className="text-xs sm:text-sm text-[#E0F2FE] max-w-xl">
               <strong>Dr. Sakshi Kocher</strong> • Consultant Physiotherapist &amp; Sports Rehab
               Specialist. Daily rehabilitation reels, posture fixes, and clinical nutrition tips.
             </p>
 
-            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 text-xs font-mono text-[#E5C687] pt-1">
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 text-xs font-mono text-[#38BDF8] pt-1">
               <span>• Daily Spine &amp; Joint Reels</span>
               <span>• Exercise Demos</span>
               <span>• Clinical Q&amp;A</span>
@@ -176,19 +176,19 @@ export default function InstagramGallerySection() {
           return (
             <div
               key={post.id}
-              className="bg-white rounded-3xl overflow-hidden border border-[#DCE9E3] hover:border-[#0F766E] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+              className="bg-white rounded-3xl overflow-hidden border border-[#E0F2FE] hover:border-[#0077B6] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
             >
               <div>
                 {/* Post Header */}
-                <div className="p-4 flex items-center justify-between border-b border-[#DCE9E3]/60 bg-[#FAF8F5]">
+                <div className="p-4 flex items-center justify-between border-b border-[#E0F2FE]/60 bg-[#F0F8FF]">
                   <div className="flex items-center gap-2.5">
                     <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] p-0.5">
-                      <div className="w-full h-full rounded-full bg-[#064E4B] flex items-center justify-center text-white text-[10px] font-bold">
+                      <div className="w-full h-full rounded-full bg-[#0A3977] flex items-center justify-center text-white text-[10px] font-bold">
                         SK
                       </div>
                     </div>
                     <div>
-                      <span className="text-xs font-bold text-[#064E4B] block leading-tight">
+                      <span className="text-xs font-bold text-[#0A3977] block leading-tight">
                         {clinicInfo.instagramHandle}
                       </span>
                       <span className="text-[10px] text-neutral-500">Dr. Sakshi Kocher • Physio</span>
@@ -199,7 +199,7 @@ export default function InstagramGallerySection() {
                     href={clinicInfo.instagramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-neutral-400 hover:text-[#0F766E] transition-colors p-1"
+                    className="text-neutral-400 hover:text-[#0077B6] transition-colors p-1"
                     title="View post on Instagram"
                   >
                     <ExternalLink className="w-4 h-4" />
@@ -222,7 +222,7 @@ export default function InstagramGallerySection() {
                     )}
                   </div>
 
-                  <span className="relative z-10 px-3 py-1 rounded-full bg-black/40 backdrop-blur-md border border-white/20 text-[#FAF8F5] text-[10px] font-mono uppercase tracking-widest font-bold mb-2">
+                  <span className="relative z-10 px-3 py-1 rounded-full bg-black/40 backdrop-blur-md border border-white/20 text-[#F0F8FF] text-[10px] font-mono uppercase tracking-widest font-bold mb-2">
                     {post.type} {post.duration && `• ${post.duration}`}
                   </span>
 
@@ -235,14 +235,14 @@ export default function InstagramGallerySection() {
                     href={clinicInfo.instagramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="absolute inset-0 z-20 flex items-end justify-center pb-3 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 backdrop-blur-xs text-xs font-bold text-[#F5E6CA]"
+                    className="absolute inset-0 z-20 flex items-end justify-center pb-3 opacity-0 group-hover:opacity-100 transition-opacity bg-black/30 backdrop-blur-xs text-xs font-bold text-[#E0F2FE]"
                   >
                     Watch Reel on Instagram &rarr;
                   </a>
                 </div>
 
                 {/* Post Action Bar (Interactive Like, Comment, Share) */}
-                <div className="p-4 pb-2 flex items-center justify-between border-b border-[#DCE9E3]/50">
+                <div className="p-4 pb-2 flex items-center justify-between border-b border-[#E0F2FE]/50">
                   <div className="flex items-center gap-4">
                     <button
                       onClick={() => toggleLike(post.id)}
@@ -263,7 +263,7 @@ export default function InstagramGallerySection() {
                       href={clinicInfo.instagramUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 text-xs text-neutral-700 hover:text-[#0F766E] transition-colors"
+                      className="flex items-center gap-1.5 text-xs text-neutral-700 hover:text-[#0077B6] transition-colors"
                     >
                       <MessageCircle className="w-4 h-4 text-neutral-600" />
                       <span className="font-semibold text-[11px]">{post.comments}</span>
@@ -273,7 +273,7 @@ export default function InstagramGallerySection() {
                       href={clinicInfo.instagramUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-neutral-600 hover:text-[#0F766E] transition-colors"
+                      className="text-neutral-600 hover:text-[#0077B6] transition-colors"
                       title="Share post"
                     >
                       <Share2 className="w-4 h-4" />
@@ -286,7 +286,7 @@ export default function InstagramGallerySection() {
                 {/* Post Caption & Hashtags */}
                 <div className="p-4 space-y-2">
                   <p className="text-xs text-neutral-700 leading-relaxed">
-                    <strong className="text-[#064E4B] mr-1.5">
+                    <strong className="text-[#0A3977] mr-1.5">
                       {clinicInfo.instagramHandle}
                     </strong>
                     {post.caption}
@@ -296,7 +296,7 @@ export default function InstagramGallerySection() {
                     {post.tags.map((tag, idx) => (
                       <span
                         key={idx}
-                        className="text-[10px] font-mono text-[#0F766E] hover:underline"
+                        className="text-[10px] font-mono text-[#0077B6] hover:underline"
                       >
                         {tag}
                       </span>
@@ -311,7 +311,7 @@ export default function InstagramGallerySection() {
                   href={clinicInfo.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-2.5 px-3 rounded-xl bg-[#FAF8F5] hover:bg-[#064E4B] hover:text-white text-[#064E4B] font-bold text-xs tracking-wider transition-all flex items-center justify-center gap-2 border border-[#DCE9E3] hover:border-[#064E4B]"
+                  className="w-full py-2.5 px-3 rounded-xl bg-[#F0F8FF] hover:bg-[#0A3977] hover:text-white text-[#0A3977] font-bold text-xs tracking-wider transition-all flex items-center justify-center gap-2 border border-[#E0F2FE] hover:border-[#0A3977]"
                 >
                   <InstagramIcon className="w-3.5 h-3.5" />
                   <span>View Post on Instagram &rarr;</span>

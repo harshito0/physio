@@ -26,13 +26,13 @@ export default function ContactPage() {
       <Breadcrumb items={[{ label: "Contact Clinic" }]} />
 
       <div className="max-w-3xl">
-        <span className="text-xs font-bold uppercase tracking-widest text-[#C6A56B] bg-[#C6A56B]/10 px-3 py-1 rounded-full inline-block mb-3">
+        <span className="text-xs font-bold uppercase tracking-widest text-[#00AEEF] bg-[#00AEEF]/10 px-3 py-1 rounded-full inline-block mb-3">
           Get In Touch
         </span>
-        <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#064E4B] leading-tight">
+        <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#0A3977] leading-tight">
           Contact Dr. Sakshi&apos;s Zenlife Physio
         </h1>
-        <p className="mt-3 text-base text-[#202A2A]/80 leading-relaxed">
+        <p className="mt-3 text-base text-[#0F172A]/80 leading-relaxed">
           We welcome inquiries regarding patient consultations, treatment protocols, and clinic availability.
           Reach out directly by phone, WhatsApp, or through the contact form below.
         </p>
@@ -41,14 +41,14 @@ export default function ContactPage() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
         {/* Left Column: Verified Channels & Details */}
         <div className="lg:col-span-5 space-y-6">
-          <div className="bg-white rounded-3xl p-8 border border-[#DCE9E3] shadow-md space-y-6">
-            <h2 className="font-serif text-2xl font-bold text-[#064E4B]">
+          <div className="bg-white rounded-3xl p-8 border border-[#E0F2FE] shadow-md space-y-6">
+            <h2 className="font-serif text-2xl font-bold text-[#0A3977]">
               Clinic Contact Channels
             </h2>
 
             {/* Telephone */}
             <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-xl bg-[#0F766E]/10 text-[#0F766E] flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-[#0077B6]/10 text-[#0077B6] flex items-center justify-center shrink-0">
                 <Phone className="w-5 h-5" />
               </div>
               <div>
@@ -57,7 +57,7 @@ export default function ContactPage() {
                 </span>
                 <a
                   href={`tel:${clinicInfo.phone}`}
-                  className="font-serif text-lg font-bold text-[#064E4B] hover:text-[#0F766E] transition-colors"
+                  className="font-serif text-lg font-bold text-[#0A3977] hover:text-[#0077B6] transition-colors"
                 >
                   {clinicInfo.phoneDisplay}
                 </a>
@@ -67,7 +67,7 @@ export default function ContactPage() {
 
             {/* WhatsApp */}
             <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-xl bg-[#14B8A6]/10 text-[#14B8A6] flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/10 text-[#00AEEF] flex items-center justify-center shrink-0">
                 <MessageCircle className="w-5 h-5" />
               </div>
               <div>
@@ -78,7 +78,7 @@ export default function ContactPage() {
                   href={clinicInfo.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm font-bold text-[#0F766E] hover:underline"
+                  className="text-sm font-bold text-[#0077B6] hover:underline"
                 >
                   Chat with Reception on WhatsApp &rarr;
                 </a>
@@ -88,7 +88,7 @@ export default function ContactPage() {
 
             {/* Email */}
             <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-xl bg-[#C6A56B]/15 text-[#C6A56B] flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-[#00AEEF]/15 text-[#00AEEF] flex items-center justify-center shrink-0">
                 <Mail className="w-5 h-5" />
               </div>
               <div>
@@ -97,7 +97,7 @@ export default function ContactPage() {
                 </span>
                 <a
                   href={`mailto:${clinicInfo.email}`}
-                  className="text-sm font-semibold text-[#064E4B] hover:text-[#0F766E] transition-colors break-all"
+                  className="text-sm font-semibold text-[#0A3977] hover:text-[#0077B6] transition-colors break-all"
                 >
                   {clinicInfo.email}
                 </a>
@@ -118,7 +118,7 @@ export default function ContactPage() {
                   href={clinicInfo.youtubeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm font-semibold text-[#064E4B] hover:text-[#0F766E] transition-colors"
+                  className="text-sm font-semibold text-[#0A3977] hover:text-[#0077B6] transition-colors"
                 >
                   @{clinicInfo.youtubeHandle} &rarr;
                 </a>
@@ -128,10 +128,10 @@ export default function ContactPage() {
           </div>
 
           {/* Location & Appointment Notice Box */}
-          <div className="bg-[#FAF8F5] rounded-3xl p-6 border border-[#DCE9E3] space-y-3">
+          <div className="bg-[#F0F8FF] rounded-3xl p-6 border border-[#E0F2FE] space-y-3">
             <div className="flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-[#C6A56B]" />
-              <h3 className="font-serif text-base font-bold text-[#064E4B]">
+              <MapPin className="w-5 h-5 text-[#00AEEF]" />
+              <h3 className="font-serif text-base font-bold text-[#0A3977]">
                 Clinic Address &amp; Navigation
               </h3>
             </div>
@@ -146,8 +146,8 @@ export default function ContactPage() {
 
         {/* Right Column: General Enquiry Form */}
         <div className="lg:col-span-7">
-          <div className="bg-white rounded-3xl p-8 sm:p-10 border border-[#DCE9E3] shadow-md">
-            <h2 className="font-serif text-2xl font-bold text-[#064E4B] mb-2">
+          <div className="bg-white rounded-3xl p-8 sm:p-10 border border-[#E0F2FE] shadow-md">
+            <h2 className="font-serif text-2xl font-bold text-[#0A3977] mb-2">
               Send an Online Enquiry
             </h2>
             <p className="text-xs text-neutral-600 mb-6">
@@ -155,11 +155,11 @@ export default function ContactPage() {
             </p>
 
             {submitted ? (
-              <div className="p-8 text-center bg-[#FAF8F5] rounded-2xl border border-[#DCE9E3]">
-                <div className="w-12 h-12 rounded-full bg-[#0F766E]/10 text-[#0F766E] mx-auto flex items-center justify-center mb-3">
+              <div className="p-8 text-center bg-[#F0F8FF] rounded-2xl border border-[#E0F2FE]">
+                <div className="w-12 h-12 rounded-full bg-[#0077B6]/10 text-[#0077B6] mx-auto flex items-center justify-center mb-3">
                   <CheckCircle2 className="w-7 h-7" />
                 </div>
-                <h3 className="font-serif text-xl font-bold text-[#064E4B] mb-2">
+                <h3 className="font-serif text-xl font-bold text-[#0A3977] mb-2">
                   Message Sent Successfully
                 </h3>
                 <p className="text-xs text-neutral-600 max-w-md mx-auto mb-4">
@@ -168,7 +168,7 @@ export default function ContactPage() {
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="px-5 py-2.5 rounded-xl bg-[#064E4B] text-white text-xs font-semibold"
+                  className="px-5 py-2.5 rounded-xl bg-[#0A3977] text-white text-xs font-semibold"
                 >
                   Send Another Message
                 </button>
@@ -186,7 +186,7 @@ export default function ContactPage() {
                       placeholder="e.g. Ananya Roy"
                       value={inquiryData.name}
                       onChange={(e) => setInquiryData({ ...inquiryData, name: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl border border-[#DCE9E3] focus:border-[#0F766E] focus:ring-2 focus:ring-[#0F766E]/20 text-xs outline-none"
+                      className="w-full px-4 py-2.5 rounded-xl border border-[#E0F2FE] focus:border-[#0077B6] focus:ring-2 focus:ring-[#0077B6]/20 text-xs outline-none"
                     />
                   </div>
 
@@ -200,7 +200,7 @@ export default function ContactPage() {
                       placeholder="+91 98765 43210"
                       value={inquiryData.phone}
                       onChange={(e) => setInquiryData({ ...inquiryData, phone: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl border border-[#DCE9E3] focus:border-[#0F766E] focus:ring-2 focus:ring-[#0F766E]/20 text-xs outline-none"
+                      className="w-full px-4 py-2.5 rounded-xl border border-[#E0F2FE] focus:border-[#0077B6] focus:ring-2 focus:ring-[#0077B6]/20 text-xs outline-none"
                     />
                   </div>
                 </div>
@@ -215,7 +215,7 @@ export default function ContactPage() {
                       placeholder="name@example.com"
                       value={inquiryData.email}
                       onChange={(e) => setInquiryData({ ...inquiryData, email: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl border border-[#DCE9E3] focus:border-[#0F766E] focus:ring-2 focus:ring-[#0F766E]/20 text-xs outline-none"
+                      className="w-full px-4 py-2.5 rounded-xl border border-[#E0F2FE] focus:border-[#0077B6] focus:ring-2 focus:ring-[#0077B6]/20 text-xs outline-none"
                     />
                   </div>
 
@@ -228,7 +228,7 @@ export default function ContactPage() {
                       placeholder="e.g. Inquiring about knee pain rehabilitation"
                       value={inquiryData.subject}
                       onChange={(e) => setInquiryData({ ...inquiryData, subject: e.target.value })}
-                      className="w-full px-4 py-2.5 rounded-xl border border-[#DCE9E3] focus:border-[#0F766E] focus:ring-2 focus:ring-[#0F766E]/20 text-xs outline-none"
+                      className="w-full px-4 py-2.5 rounded-xl border border-[#E0F2FE] focus:border-[#0077B6] focus:ring-2 focus:ring-[#0077B6]/20 text-xs outline-none"
                     />
                   </div>
                 </div>
@@ -243,15 +243,15 @@ export default function ContactPage() {
                     placeholder="How can Dr. Sakshi's clinic assist you?"
                     value={inquiryData.message}
                     onChange={(e) => setInquiryData({ ...inquiryData, message: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl border border-[#DCE9E3] focus:border-[#0F766E] focus:ring-2 focus:ring-[#0F766E]/20 text-xs outline-none resize-none"
+                    className="w-full px-4 py-2.5 rounded-xl border border-[#E0F2FE] focus:border-[#0077B6] focus:ring-2 focus:ring-[#0077B6]/20 text-xs outline-none resize-none"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-3 rounded-xl bg-[#064E4B] hover:bg-[#0F766E] text-white text-xs font-bold transition-all shadow-md flex items-center justify-center gap-2"
+                  className="w-full py-3 rounded-xl bg-[#0A3977] hover:bg-[#0077B6] text-white text-xs font-bold transition-all shadow-md flex items-center justify-center gap-2"
                 >
-                  <Send className="w-4 h-4 text-[#C6A56B]" />
+                  <Send className="w-4 h-4 text-[#00AEEF]" />
                   <span>Send Message to Reception</span>
                 </button>
               </form>

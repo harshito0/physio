@@ -96,7 +96,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="flex flex-col overflow-hidden bg-[#F8F6F0]">
+    <div className="flex flex-col overflow-hidden bg-[#F8FAFC]">
       {/* 1. CINEMATIC 3D LOADING SEQUENCE */}
       <CinematicLoader />
 
@@ -120,14 +120,14 @@ export default function HomePage() {
 
       {/* 8. NUTRITION & METABOLIC BIOCHEMISTRY INTEGRATION */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="bg-[#FAF8F5] rounded-3xl p-8 sm:p-14 border border-[#DCE9E3] shadow-md">
+        <div className="bg-[#F0F8FF] rounded-3xl p-8 sm:p-14 border border-[#E0F2FE] shadow-md">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-7 space-y-5">
-              <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#C6A56B] bg-[#064E4B] px-3.5 py-1.5 rounded-full inline-block border border-[#C6A56B]/30 shadow-xs">
+              <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#00AEEF] bg-[#0A3977] px-3.5 py-1.5 rounded-full inline-block border border-[#00AEEF]/30 shadow-xs">
                 Cellular Synthesis
               </span>
 
-              <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#064E4B] leading-tight">
+              <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#0A3977] leading-tight">
                 Clinical Nutrition: The Biochemical Engine of Tissue Repair
               </h2>
 
@@ -139,19 +139,19 @@ export default function HomePage() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">
                 <div className="flex items-center gap-2.5 text-neutral-800">
-                  <CheckCircle2 className="w-4 h-4 text-[#0F766E]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#0077B6]" />
                   <span>Joint Cartilage &amp; Synovial Fluid Nourishment</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-neutral-800">
-                  <CheckCircle2 className="w-4 h-4 text-[#0F766E]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#0077B6]" />
                   <span>Post-Surgical Muscle Sarcopenia Prevention</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-neutral-800">
-                  <CheckCircle2 className="w-4 h-4 text-[#0F766E]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#0077B6]" />
                   <span>Down-Regulating Systemic Cytokines</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-neutral-800">
-                  <CheckCircle2 className="w-4 h-4 text-[#0F766E]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#0077B6]" />
                   <span>Athletic Fueling &amp; Electrolyte Homeostasis</span>
                 </div>
               </div>
@@ -160,13 +160,13 @@ export default function HomePage() {
             <div className="lg:col-span-5 flex flex-col items-start lg:items-end justify-center gap-4">
               <button
                 onClick={() => handleOpenBooking("Nutrition guidance")}
-                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#064E4B] hover:bg-[#0F766E] text-white font-bold text-xs tracking-wider transition-colors shadow-md text-center"
+                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#0A3977] hover:bg-[#0077B6] text-white font-bold text-xs tracking-wider transition-colors shadow-md text-center"
               >
                 Schedule Nutrition Consult
               </button>
               <Link
                 href="/nutrition"
-                className="text-xs font-bold text-[#064E4B] hover:text-[#0F766E] inline-flex items-center gap-1.5"
+                className="text-xs font-bold text-[#0A3977] hover:text-[#0077B6] inline-flex items-center gap-1.5"
               >
                 <span>Read Full Nutritional Science Blueprint</span>
                 <ArrowRight className="w-4 h-4" />
@@ -182,10 +182,10 @@ export default function HomePage() {
       {/* 9. VERIFIED CLINICAL PATIENT OUTCOMES */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#C6A56B] bg-[#064E4B] px-3.5 py-1.5 rounded-full inline-block mb-3 border border-[#C6A56B]/30 shadow-xs">
+          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#00AEEF] bg-[#0A3977] px-3.5 py-1.5 rounded-full inline-block mb-3 border border-[#00AEEF]/30 shadow-xs">
             Measured Outcomes
           </span>
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#064E4B] leading-tight">
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#0A3977] leading-tight">
             Patient Recovery Journeys
           </h2>
           <p className="mt-3 text-sm sm:text-base text-neutral-600 leading-relaxed">
@@ -198,17 +198,17 @@ export default function HomePage() {
           {PATIENT_STORIES.map((story, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-3xl p-8 border border-[#DCE9E3] shadow-sm hover:border-[#0F766E] transition-all flex flex-col justify-between"
+              className="bg-white rounded-3xl p-8 border border-[#E0F2FE] shadow-sm hover:border-[#0077B6] transition-all flex flex-col justify-between"
             >
               <p className="text-xs sm:text-sm text-neutral-700 italic leading-relaxed mb-6">
                 &ldquo;{story.quote}&rdquo;
               </p>
 
-              <div className="pt-4 border-t border-[#DCE9E3]/70 space-y-1 text-xs">
-                <span className="font-serif font-bold text-[#064E4B] block text-sm">
+              <div className="pt-4 border-t border-[#E0F2FE]/70 space-y-1 text-xs">
+                <span className="font-serif font-bold text-[#0A3977] block text-sm">
                   {story.patient}
                 </span>
-                <span className="text-[#0F766E] font-medium block">{story.condition}</span>
+                <span className="text-[#0077B6] font-medium block">{story.condition}</span>
                 <span className="text-neutral-500 text-[11px] font-mono block">{story.outcome}</span>
               </div>
             </div>
@@ -219,10 +219,10 @@ export default function HomePage() {
       {/* 10. FREQUENTLY ASKED QUESTIONS */}
       <section className="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-center mb-12">
-          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#C6A56B] bg-[#064E4B] px-3.5 py-1.5 rounded-full inline-block mb-3 border border-[#C6A56B]/30 shadow-xs">
+          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#00AEEF] bg-[#0A3977] px-3.5 py-1.5 rounded-full inline-block mb-3 border border-[#00AEEF]/30 shadow-xs">
             Patient Questions
           </span>
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#064E4B] leading-tight">
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#0A3977] leading-tight">
             Frequently Asked Questions
           </h2>
           <p className="mt-3 text-sm text-neutral-600">
@@ -242,67 +242,67 @@ export default function HomePage() {
 
       {/* 12. CLINIC LOCATION, VERIFIED CHANNELS & DIRECTIONS */}
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="bg-[#FAF8F5] rounded-3xl p-8 sm:p-12 border border-[#DCE9E3]">
+        <div className="bg-[#F0F8FF] rounded-3xl p-8 sm:p-12 border border-[#E0F2FE]">
           <div className="max-w-2xl mb-8">
-            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#C6A56B] bg-[#064E4B] px-3 py-1 rounded-full inline-block mb-2 text-white">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#00AEEF] bg-[#0A3977] px-3 py-1 rounded-full inline-block mb-2 text-white">
               Connect Directly
             </span>
-            <h2 className="font-serif text-3xl font-bold text-[#064E4B]">
+            <h2 className="font-serif text-3xl font-bold text-[#0A3977]">
               Clinic Location &amp; Inquiries
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div className="p-6 rounded-2xl bg-white border border-[#DCE9E3] shadow-xs">
-              <Phone className="w-5 h-5 text-[#0F766E] mb-2" />
-              <h4 className="font-serif text-base font-bold text-[#064E4B] mb-1">Direct Telephone</h4>
+            <div className="p-6 rounded-2xl bg-white border border-[#E0F2FE] shadow-xs">
+              <Phone className="w-5 h-5 text-[#0077B6] mb-2" />
+              <h4 className="font-serif text-base font-bold text-[#0A3977] mb-1">Direct Telephone</h4>
               <p className="text-xs text-neutral-600 mb-3">Consultation booking &amp; inquiries</p>
               <a
                 href={`tel:${clinicInfo.phone}`}
-                className="text-xs font-bold text-[#064E4B] hover:text-[#0F766E] transition-colors"
+                className="text-xs font-bold text-[#0A3977] hover:text-[#0077B6] transition-colors"
               >
                 {clinicInfo.phoneDisplay}
               </a>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-[#DCE9E3] shadow-xs">
-              <MessageCircle className="w-5 h-5 text-[#14B8A6] mb-2" />
-              <h4 className="font-serif text-base font-bold text-[#064E4B] mb-1">WhatsApp Direct</h4>
+            <div className="p-6 rounded-2xl bg-white border border-[#E0F2FE] shadow-xs">
+              <MessageCircle className="w-5 h-5 text-[#00AEEF] mb-2" />
+              <h4 className="font-serif text-base font-bold text-[#0A3977] mb-1">WhatsApp Direct</h4>
               <p className="text-xs text-neutral-600 mb-3">Instant chat, location &amp; slots</p>
               <a
                 href={clinicInfo.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs font-bold text-[#0F766E] hover:underline"
+                className="text-xs font-bold text-[#0077B6] hover:underline"
               >
                 Chat on WhatsApp &rarr;
               </a>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-[#DCE9E3] shadow-xs">
-              <Mail className="w-5 h-5 text-[#C6A56B] mb-2" />
-              <h4 className="font-serif text-base font-bold text-[#064E4B] mb-1">Email Reception</h4>
+            <div className="p-6 rounded-2xl bg-white border border-[#E0F2FE] shadow-xs">
+              <Mail className="w-5 h-5 text-[#00AEEF] mb-2" />
+              <h4 className="font-serif text-base font-bold text-[#0A3977] mb-1">Email Reception</h4>
               <p className="text-xs text-neutral-600 mb-3">Formal clinical correspondence</p>
               <a
                 href={`mailto:${clinicInfo.email}`}
-                className="text-xs font-bold text-[#064E4B] hover:text-[#0F766E] transition-colors break-all"
+                className="text-xs font-bold text-[#0A3977] hover:text-[#0077B6] transition-colors break-all"
               >
                 {clinicInfo.email}
               </a>
             </div>
           </div>
 
-          <div className="p-6 rounded-2xl bg-white border border-[#DCE9E3] flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="p-6 rounded-2xl bg-white border border-[#E0F2FE] flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-start gap-3">
-              <MapPin className="w-5 h-5 text-[#C6A56B] shrink-0 mt-0.5" />
+              <MapPin className="w-5 h-5 text-[#00AEEF] shrink-0 mt-0.5" />
               <div>
-                <h5 className="text-xs font-bold text-[#064E4B]">Clinic Operating Notice</h5>
+                <h5 className="text-xs font-bold text-[#0A3977]">Clinic Operating Notice</h5>
                 <p className="text-xs text-neutral-600">{clinicInfo.addressNotice}</p>
               </div>
             </div>
             <Link
               href="/contact"
-              className="text-xs px-5 py-2.5 rounded-xl bg-[#064E4B] text-white font-semibold shrink-0 hover:bg-[#0F766E] transition-colors"
+              className="text-xs px-5 py-2.5 rounded-xl bg-[#0A3977] text-white font-semibold shrink-0 hover:bg-[#0077B6] transition-colors"
             >
               Directions Page
             </Link>
@@ -321,10 +321,10 @@ export default function HomePage() {
       <div className="fixed bottom-6 right-6 z-40">
         <button
           onClick={() => handleOpenBooking()}
-          className="group flex items-center gap-2.5 px-5 py-3 rounded-full bg-[#064E4B] hover:bg-[#0F766E] text-white font-mono text-xs font-bold tracking-wider shadow-2xl border border-[#C6A56B]/50 transition-all hover:scale-105 active:scale-95"
+          className="group flex items-center gap-2.5 px-5 py-3 rounded-full bg-[#0A3977] hover:bg-[#0077B6] text-white font-mono text-xs font-bold tracking-wider shadow-2xl border border-[#00AEEF]/50 transition-all hover:scale-105 active:scale-95"
           aria-label="Book appointment"
         >
-          <div className="w-2.5 h-2.5 rounded-full bg-[#14B8A6] animate-pulse" />
+          <div className="w-2.5 h-2.5 rounded-full bg-[#00AEEF] animate-pulse" />
           <span>BOOK APPOINTMENT</span>
         </button>
       </div>

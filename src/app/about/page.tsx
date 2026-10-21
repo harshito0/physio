@@ -20,13 +20,13 @@ export default function AboutPage() {
 
       {/* Hero Section */}
       <section className="max-w-4xl">
-        <span className="text-xs font-bold uppercase tracking-widest text-[#C6A56B] bg-[#C6A56B]/10 px-3 py-1 rounded-full inline-block mb-3">
+        <span className="text-xs font-bold uppercase tracking-widest text-[#00AEEF] bg-[#00AEEF]/10 px-3 py-1 rounded-full inline-block mb-3">
           Clinical Leadership &amp; Ethics
         </span>
-        <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#064E4B] leading-tight">
+        <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#0A3977] leading-tight">
           Dr. Sakshi Kocher &amp; The Zenlife Physio Philosophy
         </h1>
-        <p className="mt-4 text-base sm:text-lg text-[#202A2A]/80 leading-relaxed">
+        <p className="mt-4 text-base sm:text-lg text-[#0F172A]/80 leading-relaxed">
           Founded on the principle that true recovery requires addressing the root biomechanical source
           of pain, Dr. Sakshi combines hands-on manual physiotherapy, targeted therapeutic modalities,
           and metabolic nutrition to restore long-term vitality.
@@ -34,25 +34,25 @@ export default function AboutPage() {
       </section>
 
       {/* Doctor Detailed Profile Box */}
-      <section className="bg-white rounded-3xl p-8 sm:p-12 border border-[#DCE9E3] shadow-md">
+      <section className="bg-white rounded-3xl p-8 sm:p-12 border border-[#E0F2FE] shadow-md">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Profile Visual Badge */}
           <div className="lg:col-span-5 flex flex-col items-center">
-            <div className="w-full max-w-sm rounded-3xl overflow-hidden bg-gradient-to-b from-[#064E4B] to-[#0A5C58] p-8 text-white text-center border-2 border-[#C6A56B]/30 shadow-xl">
-              <div className="w-24 h-24 rounded-full bg-white/10 backdrop-blur-md border border-[#C6A56B]/50 flex items-center justify-center text-[#C6A56B] mx-auto mb-4">
+            <div className="w-full max-w-sm rounded-3xl overflow-hidden bg-gradient-to-b from-[#0A3977] to-[#0A5C58] p-8 text-white text-center border-2 border-[#00AEEF]/30 shadow-xl">
+              <div className="w-24 h-24 rounded-full bg-white/10 backdrop-blur-md border border-[#00AEEF]/50 flex items-center justify-center text-[#00AEEF] mx-auto mb-4">
                 <Stethoscope className="w-12 h-12" />
               </div>
-              <h2 className="font-serif text-2xl font-bold text-[#FAF8F5]">Dr. Sakshi Kocher</h2>
-              <p className="text-xs text-[#C6A56B] font-semibold mt-1">
+              <h2 className="font-serif text-2xl font-bold text-[#F0F8FF]">Dr. Sakshi Kocher</h2>
+              <p className="text-xs text-[#00AEEF] font-semibold mt-1">
                 Consultant Physiotherapist
               </p>
-              <p className="text-xs text-[#DCE9E3] mt-2">
+              <p className="text-xs text-[#E0F2FE] mt-2">
                 Sports Rehabilitation &amp; Clinical Nutrition Specialist
               </p>
 
               <div className="mt-6 pt-4 border-t border-white/20 text-left text-xs space-y-2">
                 <div>
-                  <span className="text-[10px] uppercase font-bold text-[#C6A56B] block">
+                  <span className="text-[10px] uppercase font-bold text-[#00AEEF] block">
                     Verified Practice Focus:
                   </span>
                   <span className="text-white text-xs">
@@ -60,10 +60,10 @@ export default function AboutPage() {
                   </span>
                 </div>
                 <div>
-                  <span className="text-[10px] uppercase font-bold text-[#C6A56B] block">
+                  <span className="text-[10px] uppercase font-bold text-[#00AEEF] block">
                     Professional Registration:
                   </span>
-                  <span className="text-[#DCE9E3] text-xs">
+                  <span className="text-[#E0F2FE] text-xs">
                     Registered Physiotherapist [Registration details verified with state council upon clinic records]
                   </span>
                 </div>
@@ -73,7 +73,7 @@ export default function AboutPage() {
 
           {/* Profile Bio & Practice Ethics */}
           <div className="lg:col-span-7 space-y-6">
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#064E4B]">
+            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#0A3977]">
               Dedicated, Patient-First Clinical Care
             </h3>
             <p className="text-sm text-neutral-600 leading-relaxed">
@@ -90,17 +90,17 @@ export default function AboutPage() {
             </p>
 
             <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-              <div className="p-4 rounded-2xl bg-[#FAF8F5] border border-[#DCE9E3]">
-                <ShieldCheck className="w-5 h-5 text-[#0F766E] mb-2" />
-                <h4 className="font-serif font-bold text-[#064E4B] mb-1">Evidence-Based Treatment</h4>
+              <div className="p-4 rounded-2xl bg-[#F0F8FF] border border-[#E0F2FE]">
+                <ShieldCheck className="w-5 h-5 text-[#0077B6] mb-2" />
+                <h4 className="font-serif font-bold text-[#0A3977] mb-1">Evidence-Based Treatment</h4>
                 <p className="text-neutral-600">
                   Every therapeutic modality and exercise sequence is selected based on clinical outcome data.
                 </p>
               </div>
 
-              <div className="p-4 rounded-2xl bg-[#FAF8F5] border border-[#DCE9E3]">
-                <HeartPulse className="w-5 h-5 text-[#0F766E] mb-2" />
-                <h4 className="font-serif font-bold text-[#064E4B] mb-1">Empowered Patient Education</h4>
+              <div className="p-4 rounded-2xl bg-[#F0F8FF] border border-[#E0F2FE]">
+                <HeartPulse className="w-5 h-5 text-[#0077B6] mb-2" />
+                <h4 className="font-serif font-bold text-[#0A3977] mb-1">Empowered Patient Education</h4>
                 <p className="text-neutral-600">
                   We demystify your condition so you know exactly why you feel pain and how to prevent it.
                 </p>
@@ -110,13 +110,13 @@ export default function AboutPage() {
             <div className="pt-2 flex flex-wrap gap-3">
               <Link
                 href="/book-appointment"
-                className="px-6 py-3 rounded-xl bg-[#064E4B] hover:bg-[#0F766E] text-white font-semibold text-xs transition-colors shadow-sm"
+                className="px-6 py-3 rounded-xl bg-[#0A3977] hover:bg-[#0077B6] text-white font-semibold text-xs transition-colors shadow-sm"
               >
                 Schedule Consultation with Dr. Sakshi
               </Link>
               <a
                 href={`tel:${clinicInfo.phone}`}
-                className="px-5 py-3 rounded-xl border border-[#DCE9E3] hover:bg-[#FAF8F5] text-[#064E4B] font-semibold text-xs transition-colors"
+                className="px-5 py-3 rounded-xl border border-[#E0F2FE] hover:bg-[#F0F8FF] text-[#0A3977] font-semibold text-xs transition-colors"
               >
                 Call Clinic Reception
               </a>
@@ -126,7 +126,7 @@ export default function AboutPage() {
       </section>
 
       {/* Verified Practice Areas Checklist */}
-      <section className="bg-[#FAF8F5] rounded-3xl p-8 sm:p-12 border border-[#DCE9E3]">
+      <section className="bg-[#F0F8FF] rounded-3xl p-8 sm:p-12 border border-[#E0F2FE]">
         <SectionHeading
           eyebrow="Clinical Scope"
           title="Areas of Specialization at Zenlife Physio"
@@ -137,10 +137,10 @@ export default function AboutPage() {
           {verifiedPracticeAreas.map((area, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-2xl bg-white border border-[#DCE9E3] flex items-start gap-3 shadow-xs"
+              className="p-4 rounded-2xl bg-white border border-[#E0F2FE] flex items-start gap-3 shadow-xs"
             >
-              <CheckCircle2 className="w-4 h-4 text-[#0F766E] shrink-0 mt-0.5" />
-              <span className="text-xs font-medium text-[#202A2A]">{area}</span>
+              <CheckCircle2 className="w-4 h-4 text-[#0077B6] shrink-0 mt-0.5" />
+              <span className="text-xs font-medium text-[#0F172A]">{area}</span>
             </div>
           ))}
         </div>

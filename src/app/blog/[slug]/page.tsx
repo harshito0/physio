@@ -63,16 +63,16 @@ export default async function BlogPostPage({
       {/* Article Header */}
       <header className="space-y-4">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#064E4B] bg-[#DCE9E3]/70 px-3 py-1 rounded-full">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#0A3977] bg-[#E0F2FE]/70 px-3 py-1 rounded-full">
             {post.category}
           </span>
           <span className="text-xs text-neutral-500 flex items-center gap-1 font-medium">
-            <Clock className="w-3.5 h-3.5 text-[#C6A56B]" />
+            <Clock className="w-3.5 h-3.5 text-[#00AEEF]" />
             {post.readTime}
           </span>
         </div>
 
-        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#064E4B] leading-tight">
+        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#0A3977] leading-tight">
           {post.title}
         </h1>
 
@@ -81,13 +81,13 @@ export default async function BlogPostPage({
         </p>
 
         {/* Author Byline */}
-        <div className="pt-4 border-t border-[#DCE9E3] flex flex-wrap items-center justify-between gap-4 text-xs">
+        <div className="pt-4 border-t border-[#E0F2FE] flex flex-wrap items-center justify-between gap-4 text-xs">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-[#064E4B]/10 text-[#064E4B] flex items-center justify-center font-bold text-sm">
-              <Stethoscope className="w-5 h-5 text-[#0F766E]" />
+            <div className="w-10 h-10 rounded-full bg-[#0A3977]/10 text-[#0A3977] flex items-center justify-center font-bold text-sm">
+              <Stethoscope className="w-5 h-5 text-[#0077B6]" />
             </div>
             <div>
-              <span className="font-bold text-[#064E4B] block text-sm">
+              <span className="font-bold text-[#0A3977] block text-sm">
                 {post.author}
               </span>
               <span className="text-neutral-500">{post.authorRole} • Published on {post.date}</span>
@@ -98,7 +98,7 @@ export default async function BlogPostPage({
             {post.tags.map((t, idx) => (
               <span
                 key={idx}
-                className="text-[10px] px-2.5 py-0.5 rounded-full bg-[#FAF8F5] text-neutral-600 border border-[#DCE9E3]"
+                className="text-[10px] px-2.5 py-0.5 rounded-full bg-[#F0F8FF] text-neutral-600 border border-[#E0F2FE]"
               >
                 #{t}
               </span>
@@ -108,15 +108,15 @@ export default async function BlogPostPage({
       </header>
 
       {/* Key Takeaways Box */}
-      <div className="bg-[#FAF8F5] rounded-3xl p-6 sm:p-8 border border-[#DCE9E3]">
-        <h3 className="font-serif text-lg font-bold text-[#064E4B] mb-3 flex items-center gap-2">
-          <ShieldCheck className="w-5 h-5 text-[#0F766E]" />
+      <div className="bg-[#F0F8FF] rounded-3xl p-6 sm:p-8 border border-[#E0F2FE]">
+        <h3 className="font-serif text-lg font-bold text-[#0A3977] mb-3 flex items-center gap-2">
+          <ShieldCheck className="w-5 h-5 text-[#0077B6]" />
           Key Clinical Takeaways
         </h3>
         <ul className="space-y-2.5">
           {post.keyTakeaways.map((item, idx) => (
             <li key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700">
-              <CheckCircle2 className="w-4 h-4 text-[#0F766E] shrink-0 mt-0.5" />
+              <CheckCircle2 className="w-4 h-4 text-[#0077B6] shrink-0 mt-0.5" />
               <span>{item}</span>
             </li>
           ))}
@@ -127,7 +127,7 @@ export default async function BlogPostPage({
       <div className="space-y-10 text-neutral-800 text-sm sm:text-base leading-relaxed">
         {post.content.map((section, idx) => (
           <section key={idx} className="space-y-4">
-            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#064E4B] pt-4">
+            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0A3977] pt-4">
               {section.sectionHeading}
             </h2>
             {section.paragraphs.map((p, pIdx) => (
@@ -140,7 +140,7 @@ export default async function BlogPostPage({
       </div>
 
       {/* Disclaimer */}
-      <div className="p-6 rounded-2xl bg-[#FAF8F5] border border-[#DCE9E3] text-xs text-neutral-500 leading-relaxed">
+      <div className="p-6 rounded-2xl bg-[#F0F8FF] border border-[#E0F2FE] text-xs text-neutral-500 leading-relaxed">
         <strong>Medical Notice:</strong> This article is published for educational and awareness purposes.
         If you are experiencing acute pain or severe neurological symptoms, consult a qualified physiotherapist
         or medical doctor for an in-person clinical examination before initiating exercise.

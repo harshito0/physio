@@ -5,21 +5,21 @@ import { ServiceDetail } from "@/data/services";
 
 export default function ServiceCard({ service }: { service: ServiceDetail }) {
   return (
-    <div className="group bg-white rounded-3xl p-6 sm:p-7 border border-[#DCE9E3] hover:border-[#0F766E] transition-all duration-300 hover:shadow-xl hover:shadow-teal-950/5 flex flex-col justify-between">
+    <div className="group bg-white rounded-3xl p-6 sm:p-7 border border-[#E0F2FE] hover:border-[#0077B6] transition-all duration-300 hover:shadow-xl hover:shadow-teal-950/5 flex flex-col justify-between">
       <div>
         {/* Category & Duration */}
         <div className="flex items-center justify-between mb-4">
-          <span className="text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-[#DCE9E3]/70 text-[#064E4B] border border-[#DCE9E3]">
+          <span className="text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-[#E0F2FE]/70 text-[#0A3977] border border-[#E0F2FE]">
             {service.category}
           </span>
           <span className="text-xs text-neutral-500 flex items-center gap-1 font-medium">
-            <Clock className="w-3.5 h-3.5 text-[#C6A56B]" />
+            <Clock className="w-3.5 h-3.5 text-[#00AEEF]" />
             {service.duration}
           </span>
         </div>
 
         {/* Title */}
-        <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#064E4B] group-hover:text-[#0F766E] transition-colors leading-snug mb-3">
+        <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0A3977] group-hover:text-[#0077B6] transition-colors leading-snug mb-3">
           {service.title}
         </h3>
 
@@ -35,7 +35,7 @@ export default function ServiceCard({ service }: { service: ServiceDetail }) {
           </span>
           {service.symptoms.slice(0, 3).map((sym, i) => (
             <div key={i} className="flex items-start gap-2 text-xs text-neutral-700">
-              <Check className="w-3.5 h-3.5 text-[#0F766E] shrink-0 mt-0.5" />
+              <Check className="w-3.5 h-3.5 text-[#0077B6] shrink-0 mt-0.5" />
               <span className="line-clamp-1">{sym}</span>
             </div>
           ))}
@@ -43,17 +43,17 @@ export default function ServiceCard({ service }: { service: ServiceDetail }) {
       </div>
 
       {/* Footer Link & CTA */}
-      <div className="pt-4 border-t border-[#DCE9E3]/60 flex items-center justify-between mt-auto">
+      <div className="pt-4 border-t border-[#E0F2FE]/60 flex items-center justify-between mt-auto">
         <Link
           href={`/services/${service.slug}`}
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#064E4B] group-hover:text-[#0F766E] transition-colors"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0A3977] group-hover:text-[#0077B6] transition-colors"
         >
           <span>Explore Clinical Protocol</span>
           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </Link>
         <Link
           href={`/book-appointment?service=${encodeURIComponent(service.title)}`}
-          className="text-xs px-3 py-1.5 rounded-lg bg-[#FAF8F5] hover:bg-[#064E4B] hover:text-white text-[#064E4B] font-semibold transition-colors border border-[#DCE9E3]"
+          className="text-xs px-3 py-1.5 rounded-lg bg-[#F0F8FF] hover:bg-[#0A3977] hover:text-white text-[#0A3977] font-semibold transition-colors border border-[#E0F2FE]"
         >
           Book
         </Link>

@@ -15,13 +15,15 @@ export interface ClinicData {
   whatsappUrl: string;
   addressNotice: string;
   hoursNotice: string;
+  logoUrl: string;
 }
 
 export const clinicInfo: ClinicData = {
-  name: "Dr. Sakshi's Zenlife Physio and Rehabilitation Centre",
+  name: "Dr. Sakshi's Zenlife Physio Clinic",
   shortName: "Zenlife Physio",
-  tagline: "Sports Rehabilitation and Nutrition Clinic",
+  tagline: "Specialized Rehabilitation Clinic",
   subTagline: "Expert Physiotherapy for a Pain-Free, Active Life.",
+  logoUrl: "/logo.png",
   doctorName: "Dr. Sakshi Kocher",
   doctorTitle: "Consultant Physiotherapist & Rehabilitation Specialist",
   phone: "+917087391488",

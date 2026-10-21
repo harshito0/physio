@@ -80,14 +80,14 @@ export default function CustomCursor() {
         transition={{ type: "spring", stiffness: 400, damping: 25 }}
         className={`fixed top-0 left-0 rounded-full border flex items-center justify-center transition-colors duration-200 ${
           cursorVariant === "canvas"
-            ? "w-20 h-20 bg-[#064E4B]/80 border-[#C6A56B] backdrop-blur-md shadow-lg"
+            ? "w-20 h-20 bg-[#0A3977]/80 border-[#00AEEF] backdrop-blur-md shadow-lg"
             : cursorVariant === "link"
-            ? "w-12 h-12 bg-[#0F766E]/20 border-[#C6A56B] backdrop-blur-xs"
-            : "w-8 h-8 border-[#0F766E]/60 bg-transparent"
+            ? "w-12 h-12 bg-[#0077B6]/20 border-[#00AEEF] backdrop-blur-xs"
+            : "w-8 h-8 border-[#0077B6]/60 bg-transparent"
         }`}
       >
         {cursorText && (
-          <span className="text-[8px] font-bold tracking-widest text-[#FAF8F5] uppercase text-center px-1">
+          <span className="text-[8px] font-bold tracking-widest text-[#F0F8FF] uppercase text-center px-1">
             {cursorText}
           </span>
         )}
@@ -105,7 +105,7 @@ export default function CustomCursor() {
           scale: cursorVariant === "canvas" ? 0 : cursorVariant === "link" ? 0.6 : 1,
           opacity: cursorVariant === "hidden" ? 0 : 1,
         }}
-        className="fixed top-0 left-0 w-2 h-2 rounded-full bg-[#C6A56B] shadow-xs"
+        className="fixed top-0 left-0 w-2 h-2 rounded-full bg-[#00AEEF] shadow-xs"
       />
     </div>
   );

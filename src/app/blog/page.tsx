@@ -19,13 +19,13 @@ export default function BlogIndexPage() {
       <Breadcrumb items={[{ label: "Clinical Blog" }]} />
 
       <div className="max-w-3xl">
-        <span className="text-xs font-bold uppercase tracking-widest text-[#C6A56B] bg-[#C6A56B]/10 px-3 py-1 rounded-full inline-block mb-3">
+        <span className="text-xs font-bold uppercase tracking-widest text-[#00AEEF] bg-[#00AEEF]/10 px-3 py-1 rounded-full inline-block mb-3">
           Patient Education
         </span>
-        <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#064E4B] leading-tight">
+        <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#0A3977] leading-tight">
           Physical Therapy &amp; Movement Science Insights
         </h1>
-        <p className="mt-3 text-base text-[#202A2A]/80 leading-relaxed">
+        <p className="mt-3 text-base text-[#0F172A]/80 leading-relaxed">
           Empowering you with research-backed knowledge to protect your joints, recover safely from sports
           injuries, and optimize daily physical vitality.
         </p>
@@ -36,22 +36,22 @@ export default function BlogIndexPage() {
         {blogPosts.map((post) => (
           <article
             key={post.slug}
-            className="bg-white rounded-3xl p-7 border border-[#DCE9E3] hover:border-[#0F766E] transition-all duration-300 hover:shadow-xl hover:shadow-teal-950/5 flex flex-col justify-between"
+            className="bg-white rounded-3xl p-7 border border-[#E0F2FE] hover:border-[#0077B6] transition-all duration-300 hover:shadow-xl hover:shadow-teal-950/5 flex flex-col justify-between"
           >
             <div>
               {/* Category & Read Time */}
               <div className="flex items-center justify-between mb-4">
-                <span className="text-[11px] font-bold uppercase tracking-wider text-[#064E4B] bg-[#DCE9E3]/70 px-2.5 py-1 rounded-full">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-[#0A3977] bg-[#E0F2FE]/70 px-2.5 py-1 rounded-full">
                   {post.category}
                 </span>
                 <span className="text-xs text-neutral-500 flex items-center gap-1 font-medium">
-                  <Clock className="w-3.5 h-3.5 text-[#C6A56B]" />
+                  <Clock className="w-3.5 h-3.5 text-[#00AEEF]" />
                   {post.readTime}
                 </span>
               </div>
 
               {/* Title */}
-              <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#064E4B] hover:text-[#0F766E] transition-colors leading-snug mb-3">
+              <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#0A3977] hover:text-[#0077B6] transition-colors leading-snug mb-3">
                 <Link href={`/blog/${post.slug}`}>{post.title}</Link>
               </h2>
 
@@ -65,7 +65,7 @@ export default function BlogIndexPage() {
                 {post.tags.slice(0, 3).map((tag, i) => (
                   <span
                     key={i}
-                    className="text-[10px] px-2 py-0.5 rounded-md bg-[#FAF8F5] text-neutral-600 border border-[#DCE9E3]"
+                    className="text-[10px] px-2 py-0.5 rounded-md bg-[#F0F8FF] text-neutral-600 border border-[#E0F2FE]"
                   >
                     #{tag}
                   </span>
@@ -74,9 +74,9 @@ export default function BlogIndexPage() {
             </div>
 
             {/* Author Footer */}
-            <div className="pt-4 border-t border-[#DCE9E3]/60 flex items-center justify-between text-xs">
+            <div className="pt-4 border-t border-[#E0F2FE]/60 flex items-center justify-between text-xs">
               <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-full bg-[#064E4B]/10 text-[#064E4B] flex items-center justify-center font-bold text-[10px]">
+                <div className="w-6 h-6 rounded-full bg-[#0A3977]/10 text-[#0A3977] flex items-center justify-center font-bold text-[10px]">
                   SK
                 </div>
                 <div>
@@ -89,7 +89,7 @@ export default function BlogIndexPage() {
 
               <Link
                 href={`/blog/${post.slug}`}
-                className="font-bold text-[#064E4B] hover:text-[#0F766E] inline-flex items-center gap-1"
+                className="font-bold text-[#0A3977] hover:text-[#0077B6] inline-flex items-center gap-1"
               >
                 <span>Read</span>
                 <ArrowRight className="w-3.5 h-3.5" />

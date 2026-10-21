@@ -41,14 +41,14 @@ export default function FloatingBookingExperience({
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.92, opacity: 0, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative w-full max-w-2xl bg-[#FAF8F5] rounded-3xl p-6 sm:p-8 border border-[#C6A56B]/40 shadow-2xl max-h-[92vh] overflow-y-auto"
+            className="relative w-full max-w-2xl bg-[#F0F8FF] rounded-3xl p-6 sm:p-8 border border-[#00AEEF]/40 shadow-2xl max-h-[92vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Top Close Bar */}
-            <div className="flex items-center justify-between pb-3 border-b border-[#DCE9E3] mb-4">
+            <div className="flex items-center justify-between pb-3 border-b border-[#E0F2FE] mb-4">
               <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#14B8A6] animate-pulse" />
-                <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#064E4B]">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#00AEEF] animate-pulse" />
+                <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#0A3977]">
                   PRIORITY CLINICAL SCHEDULING
                 </span>
               </div>

@@ -76,8 +76,8 @@ function VertebraMesh({
   onPointerOut: () => void;
   onClick: () => void;
 }) {
-  const boneColor = isHighlighted ? "#C6A56B" : "#F3EDE2";
-  const emissiveColor = isHighlighted ? "#C6A56B" : "#000000";
+  const boneColor = isHighlighted ? "#00AEEF" : "#F1F5F9";
+  const emissiveColor = isHighlighted ? "#0077B6" : "#000000";
 
   return (
     <group
@@ -108,7 +108,7 @@ function VertebraMesh({
       <mesh position={[0, -0.13, 0]} scale={[scale[0] * 0.94, 1, scale[2] * 0.94]}>
         <cylinderGeometry args={[0.52, 0.52, 0.07, 20]} />
         <meshStandardMaterial
-          color={isHighlighted ? "#14B8A6" : "#A6CBC5"}
+          color={isHighlighted ? "#00AEEF" : "#94A3B8"}
           roughness={0.2}
           transparent
           opacity={0.88}
@@ -146,12 +146,12 @@ function RibPair({ y, z, width }: { y: number; z: number; width: number }) {
       {/* Left Rib Arc */}
       <mesh position={[width * 0.65, -0.05, 0.2]} rotation={[0.15, 0.4, 0.35]}>
         <torusGeometry args={[width * 0.55, 0.045, 12, 28, Math.PI * 0.7]} />
-        <meshStandardMaterial color="#EAE2D5" roughness={0.4} transparent opacity={0.65} />
+        <meshStandardMaterial color="#E2E8F0" roughness={0.4} transparent opacity={0.65} />
       </mesh>
       {/* Right Rib Arc */}
       <mesh position={[-width * 0.65, -0.05, 0.2]} rotation={[0.15, -0.4, -0.35]}>
         <torusGeometry args={[width * 0.55, 0.045, 12, 28, Math.PI * 0.7]} />
-        <meshStandardMaterial color="#EAE2D5" roughness={0.4} transparent opacity={0.65} />
+        <meshStandardMaterial color="#E2E8F0" roughness={0.4} transparent opacity={0.65} />
       </mesh>
     </group>
   );
@@ -188,9 +188,9 @@ function FloatingParticles({ count = 180 }: { count?: number }) {
       </bufferGeometry>
       <pointsMaterial
         size={0.06}
-        color="#C6A56B"
+        color="#00AEEF"
         transparent
-        opacity={0.6}
+        opacity={0.65}
         blending={THREE.AdditiveBlending}
       />
     </points>
@@ -269,8 +269,8 @@ export default function AnatomicalSpine3D({
       <mesh position={[0, 0.2, -0.12]}>
         <cylinderGeometry args={[0.07, 0.09, 6.7, 16]} />
         <meshStandardMaterial
-          color="#14B8A6"
-          emissive="#0F766E"
+          color="#00AEEF"
+          emissive="#0077B6"
           emissiveIntensity={0.9}
           roughness={0.15}
           transparent
@@ -306,16 +306,16 @@ export default function AnatomicalSpine3D({
         <mesh scale={[1.45, 1.0, 0.85]}>
           <coneGeometry args={[0.75, 1.3, 16]} />
           <meshStandardMaterial
-            color={selectedHotspot === "sacrum" ? "#C6A56B" : "#E4DCce"}
+            color={selectedHotspot === "sacrum" ? "#00AEEF" : "#E2E8F0"}
             roughness={0.4}
             metalness={0.1}
-            emissive={selectedHotspot === "sacrum" ? "#C6A56B" : "#000000"}
-            emissiveIntensity={selectedHotspot === "sacrum" ? 0.45 : 0.0}
+            emissive={selectedHotspot === "sacrum" ? "#0077B6" : "#000000"}
+            emissiveIntensity={selectedHotspot === "sacrum" ? 0.6 : 0.0}
           />
         </mesh>
       </group>
 
-      {/* 3D Interactive Hotspot Beacons (Pure Three.js for React 19 stability) */}
+      {/* 3D Interactive Hotspot Beacons */}
       {enableHotspots &&
         Object.values(ANATOMICAL_HOTSPOTS).map((spot) => {
           const isActive = selectedHotspot === spot.id;
@@ -341,8 +341,8 @@ export default function AnatomicalSpine3D({
               <mesh>
                 <sphereGeometry args={[isActive ? 0.16 : 0.11, 20, 20]} />
                 <meshStandardMaterial
-                  color={isActive ? "#E5C687" : "#14B8A6"}
-                  emissive={isActive ? "#C6A56B" : "#0F766E"}
+                  color={isActive ? "#38BDF8" : "#00AEEF"}
+                  emissive={isActive ? "#00AEEF" : "#0A3977"}
                   emissiveIntensity={isActive ? 2.2 : 1.0}
                   roughness={0.1}
                 />
@@ -352,8 +352,8 @@ export default function AnatomicalSpine3D({
               <mesh rotation={[Math.PI / 2, 0, 0]}>
                 <torusGeometry args={[isActive ? 0.28 : 0.2, 0.02, 16, 32]} />
                 <meshStandardMaterial
-                  color={isActive ? "#E5C687" : "#5EEAD4"}
-                  emissive={isActive ? "#C6A56B" : "#14B8A6"}
+                  color={isActive ? "#BAE6FD" : "#38BDF8"}
+                  emissive={isActive ? "#00AEEF" : "#0077B6"}
                   emissiveIntensity={isActive ? 1.8 : 0.8}
                   transparent
                   opacity={isActive ? 0.9 : 0.6}

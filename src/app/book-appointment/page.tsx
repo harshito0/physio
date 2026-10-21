@@ -17,13 +17,13 @@ export default function BookAppointmentPage() {
       <Breadcrumb items={[{ label: "Book Consultation" }]} />
 
       <div className="max-w-3xl">
-        <span className="text-xs font-bold uppercase tracking-widest text-[#C6A56B] bg-[#C6A56B]/10 px-3 py-1 rounded-full inline-block mb-3">
+        <span className="text-xs font-bold uppercase tracking-widest text-[#00AEEF] bg-[#00AEEF]/10 px-3 py-1 rounded-full inline-block mb-3">
           Clinical Scheduling
         </span>
-        <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#064E4B] leading-tight">
+        <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#0A3977] leading-tight">
           Schedule Your Consultation with Dr. Sakshi
         </h1>
-        <p className="mt-3 text-base text-[#202A2A]/80 leading-relaxed">
+        <p className="mt-3 text-base text-[#0F172A]/80 leading-relaxed">
           Take the first step toward a pain-free, active life. Consultations are strictly one-on-one,
           ensuring undivided clinical attention for your biomechanical evaluation.
         </p>
@@ -39,60 +39,60 @@ export default function BookAppointmentPage() {
 
         {/* Right Column: Clinical Preparation & Advice */}
         <div className="lg:col-span-5 space-y-6">
-          <div className="bg-[#FAF8F5] rounded-3xl p-8 border border-[#DCE9E3] space-y-5">
-            <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#064E4B] flex items-center gap-2">
-              <FileText className="w-5 h-5 text-[#0F766E]" />
+          <div className="bg-[#F0F8FF] rounded-3xl p-8 border border-[#E0F2FE] space-y-5">
+            <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#0A3977] flex items-center gap-2">
+              <FileText className="w-5 h-5 text-[#0077B6]" />
               Preparing for Your Visit
             </h2>
 
             <ul className="space-y-3 text-xs text-neutral-700 leading-relaxed">
               <li className="flex items-start gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#0F766E] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#0077B6] shrink-0 mt-0.5" />
                 <span>
                   <strong>Clothing:</strong> Wear comfortable, loose sports attire (track pants, t-shirt, shorts) that allows easy access to the affected joint or spine.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#0F766E] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#0077B6] shrink-0 mt-0.5" />
                 <span>
                   <strong>Medical Records:</strong> Bring any previous X-ray, MRI, CT scans, or surgeon discharge summaries relevant to your condition.
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#0F766E] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#0077B6] shrink-0 mt-0.5" />
                 <span>
                   <strong>Evaluation Time:</strong> Allow 50 to 60 minutes for your initial consultation, postural screening, and first treatment.
                 </span>
               </li>
             </ul>
 
-            <div className="pt-4 border-t border-[#DCE9E3] flex flex-col gap-2">
+            <div className="pt-4 border-t border-[#E0F2FE] flex flex-col gap-2">
               <span className="text-[11px] font-bold uppercase text-neutral-400">
                 Prefer Instant Booking by Phone?
               </span>
               <a
                 href={`tel:${clinicInfo.phone}`}
-                className="flex items-center gap-2 text-xs font-bold text-[#064E4B] hover:text-[#0F766E]"
+                className="flex items-center gap-2 text-xs font-bold text-[#0A3977] hover:text-[#0077B6]"
               >
-                <Phone className="w-4 h-4 text-[#C6A56B]" />
+                <Phone className="w-4 h-4 text-[#00AEEF]" />
                 <span>Call {clinicInfo.phoneDisplay}</span>
               </a>
               <a
                 href={clinicInfo.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-xs font-bold text-[#0F766E] hover:underline"
+                className="flex items-center gap-2 text-xs font-bold text-[#0077B6] hover:underline"
               >
-                <MessageCircle className="w-4 h-4 text-[#14B8A6]" />
+                <MessageCircle className="w-4 h-4 text-[#00AEEF]" />
                 <span>Book directly over WhatsApp &rarr;</span>
               </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl p-6 border border-[#DCE9E3] shadow-xs flex items-center gap-3">
-            <ShieldCheck className="w-8 h-8 text-[#0F766E] shrink-0" />
+          <div className="bg-white rounded-3xl p-6 border border-[#E0F2FE] shadow-xs flex items-center gap-3">
+            <ShieldCheck className="w-8 h-8 text-[#0077B6] shrink-0" />
             <div className="text-xs">
-              <span className="font-bold text-[#064E4B] block">Ethical Clinical Commitment</span>
+              <span className="font-bold text-[#0A3977] block">Ethical Clinical Commitment</span>
               <span className="text-neutral-500">
                 No unnecessary packages or passive machine dependence. We focus on active functional recovery.
               </span>

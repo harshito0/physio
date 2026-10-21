@@ -41,15 +41,15 @@ export default function SportsRehabilitationPage() {
       <Breadcrumb items={[{ label: "Sports Rehabilitation" }]} />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#064E4B] to-[#0A5C58] text-white rounded-3xl p-8 sm:p-14 border border-[#C6A56B]/30 shadow-xl">
+      <section className="bg-gradient-to-br from-[#0A3977] to-[#0A5C58] text-white rounded-3xl p-8 sm:p-14 border border-[#00AEEF]/30 shadow-xl">
         <div className="max-w-3xl space-y-4">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#C6A56B] bg-white/10 px-3 py-1 rounded-full inline-block border border-white/20">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#00AEEF] bg-white/10 px-3 py-1 rounded-full inline-block border border-white/20">
             Athletic Recovery Science
           </span>
-          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#FAF8F5] leading-tight">
+          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#F0F8FF] leading-tight">
             Sports Rehabilitation &amp; Athletic Performance Care
           </h1>
-          <p className="text-sm sm:text-base text-[#DCE9E3] leading-relaxed">
+          <p className="text-sm sm:text-base text-[#E0F2FE] leading-relaxed">
             From competitive runners and footballers to dedicated gym athletes, Dr. Sakshi&apos;s
             rehabilitation protocols bridge the gap between acute tissue repair and peak athletic
             readiness.
@@ -58,13 +58,13 @@ export default function SportsRehabilitationPage() {
           <div className="pt-4 flex flex-wrap gap-4">
             <Link
               href="/book-appointment?service=Sports%20Injuries%20and%20Athletic%20Rehabilitation"
-              className="px-6 py-3.5 rounded-xl bg-[#FAF8F5] hover:bg-white text-[#064E4B] font-bold text-xs transition-colors shadow-md"
+              className="px-6 py-3.5 rounded-xl bg-[#F0F8FF] hover:bg-white text-[#0A3977] font-bold text-xs transition-colors shadow-md"
             >
               Book Athletic Assessment
             </Link>
             <Link
               href="/services/sports-injury-rehabilitation"
-              className="px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-[#FAF8F5] border border-white/20 font-semibold text-xs transition-colors"
+              className="px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-[#F0F8FF] border border-white/20 font-semibold text-xs transition-colors"
             >
               View Service Protocol &rarr;
             </Link>
@@ -87,13 +87,13 @@ export default function SportsRehabilitationPage() {
             return (
               <div
                 key={idx}
-                className="bg-white rounded-3xl p-6 sm:p-7 border border-[#DCE9E3] shadow-xs hover:border-[#0F766E] transition-all flex flex-col justify-between"
+                className="bg-white rounded-3xl p-6 sm:p-7 border border-[#E0F2FE] shadow-xs hover:border-[#0077B6] transition-all flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-[#0F766E]/10 text-[#0F766E] flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-2xl bg-[#0077B6]/10 text-[#0077B6] flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h3 className="font-serif text-lg font-bold text-[#064E4B] mb-2 leading-snug">
+                  <h3 className="font-serif text-lg font-bold text-[#0A3977] mb-2 leading-snug">
                     {pillar.title}
                   </h3>
                   <p className="text-xs text-neutral-600 leading-relaxed">{pillar.desc}</p>
@@ -105,12 +105,12 @@ export default function SportsRehabilitationPage() {
       </section>
 
       {/* Common Sports Injuries Addressed */}
-      <section className="bg-[#FAF8F5] rounded-3xl p-8 sm:p-12 border border-[#DCE9E3]">
+      <section className="bg-[#F0F8FF] rounded-3xl p-8 sm:p-12 border border-[#E0F2FE]">
         <div className="max-w-3xl mb-8">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#C6A56B]">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#00AEEF]">
             Athletic Specialties
           </span>
-          <h2 className="font-serif text-3xl font-bold text-[#064E4B] mt-1">
+          <h2 className="font-serif text-3xl font-bold text-[#0A3977] mt-1">
             Injuries We Frequently Manage
           </h2>
         </div>
@@ -129,10 +129,10 @@ export default function SportsRehabilitationPage() {
           ].map((item, i) => (
             <div
               key={i}
-              className="p-4 rounded-2xl bg-white border border-[#DCE9E3] flex items-center gap-3 shadow-xs"
+              className="p-4 rounded-2xl bg-white border border-[#E0F2FE] flex items-center gap-3 shadow-xs"
             >
-              <CheckCircle2 className="w-4 h-4 text-[#0F766E] shrink-0" />
-              <span className="font-medium text-[#202A2A]">{item}</span>
+              <CheckCircle2 className="w-4 h-4 text-[#0077B6] shrink-0" />
+              <span className="font-medium text-[#0F172A]">{item}</span>
             </div>
           ))}
         </div>

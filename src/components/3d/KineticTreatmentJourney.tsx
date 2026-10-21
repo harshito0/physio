@@ -10,10 +10,10 @@ export default function KineticTreatmentJourney() {
   return (
     <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
       <div className="text-center max-w-3xl mx-auto mb-14">
-        <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#C6A56B] bg-[#064E4B] px-3.5 py-1.5 rounded-full inline-block mb-3 border border-[#C6A56B]/30 shadow-xs">
+        <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#00AEEF] bg-[#0A3977] px-3.5 py-1.5 rounded-full inline-block mb-3 border border-[#00AEEF]/30 shadow-xs">
           Recovery Architecture
         </span>
-        <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#064E4B] leading-tight">
+        <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#0A3977] leading-tight">
           The Four-Step Kinetic Restoration Pathway
         </h2>
         <p className="mt-3 text-sm sm:text-base text-neutral-600 leading-relaxed">
@@ -31,14 +31,14 @@ export default function KineticTreatmentJourney() {
               onClick={() => setActiveStep(idx)}
               className={`rounded-3xl p-7 border transition-all duration-300 cursor-pointer flex flex-col justify-between ${
                 isSelected
-                  ? "bg-[#064E4B] text-[#FAF8F5] border-[#C6A56B] shadow-2xl scale-[1.02]"
-                  : "bg-white text-neutral-800 border-[#DCE9E3] hover:border-[#0F766E] shadow-sm hover:shadow-md"
+                  ? "bg-[#0A3977] text-[#F0F8FF] border-[#00AEEF] shadow-2xl scale-[1.02]"
+                  : "bg-white text-neutral-800 border-[#E0F2FE] hover:border-[#0077B6] shadow-sm hover:shadow-md"
               }`}
             >
               <div>
                 <span
                   className={`font-serif text-4xl sm:text-5xl font-bold block mb-4 transition-colors ${
-                    isSelected ? "text-[#C6A56B]" : "text-[#0F766E]/40"
+                    isSelected ? "text-[#00AEEF]" : "text-[#0077B6]/40"
                   }`}
                 >
                   {step.step}
@@ -46,7 +46,7 @@ export default function KineticTreatmentJourney() {
 
                 <h3
                   className={`font-serif text-xl font-bold mb-3 leading-snug ${
-                    isSelected ? "text-[#FAF8F5]" : "text-[#064E4B]"
+                    isSelected ? "text-[#F0F8FF]" : "text-[#0A3977]"
                   }`}
                 >
                   {step.title}
@@ -54,7 +54,7 @@ export default function KineticTreatmentJourney() {
 
                 <p
                   className={`text-xs sm:text-sm leading-relaxed ${
-                    isSelected ? "text-[#DCE9E3]/85" : "text-neutral-600"
+                    isSelected ? "text-[#E0F2FE]/85" : "text-neutral-600"
                   }`}
                 >
                   {step.description}
@@ -62,10 +62,10 @@ export default function KineticTreatmentJourney() {
               </div>
 
               <div className="pt-6 mt-6 border-t border-current/15 flex items-center justify-between text-xs font-mono">
-                <span className={isSelected ? "text-[#C6A56B]" : "text-neutral-400"}>
+                <span className={isSelected ? "text-[#00AEEF]" : "text-neutral-400"}>
                   PHASE 0{idx + 1}
                 </span>
-                <span className={isSelected ? "text-[#14B8A6]" : "text-[#0F766E]"}>
+                <span className={isSelected ? "text-[#00AEEF]" : "text-[#0077B6]"}>
                   ● ACTIVE CARE
                 </span>
               </div>

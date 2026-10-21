@@ -37,12 +37,12 @@ export default function NutritionPage() {
       <Breadcrumb items={[{ label: "Clinical Nutrition" }]} />
 
       {/* Hero Section */}
-      <section className="bg-white rounded-3xl p-8 sm:p-14 border border-[#DCE9E3] shadow-md">
+      <section className="bg-white rounded-3xl p-8 sm:p-14 border border-[#E0F2FE] shadow-md">
         <div className="max-w-3xl space-y-4">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#C6A56B] bg-[#C6A56B]/10 px-3 py-1 rounded-full inline-block">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#00AEEF] bg-[#00AEEF]/10 px-3 py-1 rounded-full inline-block">
             Biochemical Synergy
           </span>
-          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#064E4B] leading-tight">
+          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#0A3977] leading-tight">
             Clinical Nutrition &amp; Metabolic Wellness
           </h1>
           <p className="text-base sm:text-lg text-neutral-700 leading-relaxed">
@@ -54,13 +54,13 @@ export default function NutritionPage() {
           <div className="pt-4 flex flex-wrap gap-4">
             <Link
               href="/book-appointment?service=Nutrition%20guidance"
-              className="px-6 py-3.5 rounded-xl bg-[#064E4B] hover:bg-[#0F766E] text-white font-bold text-xs transition-colors shadow-md"
+              className="px-6 py-3.5 rounded-xl bg-[#0A3977] hover:bg-[#0077B6] text-white font-bold text-xs transition-colors shadow-md"
             >
               Book Nutrition Consultation
             </Link>
             <Link
               href="/blog/nutrition-for-joint-cartilage-recovery"
-              className="px-5 py-3.5 rounded-xl border border-[#DCE9E3] hover:bg-[#FAF8F5] text-[#064E4B] font-semibold text-xs transition-colors"
+              className="px-5 py-3.5 rounded-xl border border-[#E0F2FE] hover:bg-[#F0F8FF] text-[#0A3977] font-semibold text-xs transition-colors"
             >
               Read Clinical Article &rarr;
             </Link>
@@ -81,13 +81,13 @@ export default function NutritionPage() {
           {NUTRITION_AREAS.map((area, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-3xl p-6 sm:p-7 border border-[#DCE9E3] shadow-xs hover:border-[#0F766E] transition-all flex flex-col justify-between"
+              className="bg-white rounded-3xl p-6 sm:p-7 border border-[#E0F2FE] shadow-xs hover:border-[#0077B6] transition-all flex flex-col justify-between"
             >
               <div>
-                <div className="w-10 h-10 rounded-2xl bg-[#064E4B]/10 text-[#064E4B] flex items-center justify-center font-serif text-lg font-bold mb-4">
+                <div className="w-10 h-10 rounded-2xl bg-[#0A3977]/10 text-[#0A3977] flex items-center justify-center font-serif text-lg font-bold mb-4">
                   0{idx + 1}
                 </div>
-                <h3 className="font-serif text-lg font-bold text-[#064E4B] mb-2 leading-snug">
+                <h3 className="font-serif text-lg font-bold text-[#0A3977] mb-2 leading-snug">
                   {area.title}
                 </h3>
                 <p className="text-xs text-neutral-600 leading-relaxed">{area.desc}</p>
@@ -98,19 +98,19 @@ export default function NutritionPage() {
       </section>
 
       {/* The Physio + Nutrition Synergy Comparison */}
-      <section className="bg-[#FAF8F5] rounded-3xl p-8 sm:p-12 border border-[#DCE9E3]">
+      <section className="bg-[#F0F8FF] rounded-3xl p-8 sm:p-12 border border-[#E0F2FE]">
         <div className="max-w-3xl mb-8">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#C6A56B]">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#00AEEF]">
             Why Both Matter
           </span>
-          <h2 className="font-serif text-3xl font-bold text-[#064E4B] mt-1">
+          <h2 className="font-serif text-3xl font-bold text-[#0A3977] mt-1">
             The Physio &amp; Nutrition Healing Loop
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-xs sm:text-sm">
-          <div className="bg-white p-6 rounded-2xl border border-[#DCE9E3] space-y-3">
-            <h3 className="font-serif text-lg font-bold text-[#064E4B]">
+          <div className="bg-white p-6 rounded-2xl border border-[#E0F2FE] space-y-3">
+            <h3 className="font-serif text-lg font-bold text-[#0A3977]">
               1. Physical Therapy (The Mechanical Signal)
             </h3>
             <p className="text-neutral-600 leading-relaxed">
@@ -119,8 +119,8 @@ export default function NutritionPage() {
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-2xl border border-[#DCE9E3] space-y-3">
-            <h3 className="font-serif text-lg font-bold text-[#064E4B]">
+          <div className="bg-white p-6 rounded-2xl border border-[#E0F2FE] space-y-3">
+            <h3 className="font-serif text-lg font-bold text-[#0A3977]">
               2. Clinical Nutrition (The Biochemical Fuel)
             </h3>
             <p className="text-neutral-600 leading-relaxed">

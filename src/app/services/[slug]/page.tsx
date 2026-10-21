@@ -72,19 +72,19 @@ export default async function ServiceDetailPage({
       />
 
       {/* Service Hero Header */}
-      <section className="bg-white rounded-3xl p-8 sm:p-12 border border-[#DCE9E3] shadow-md">
+      <section className="bg-white rounded-3xl p-8 sm:p-12 border border-[#E0F2FE] shadow-md">
         <div className="max-w-4xl space-y-4">
           <div className="flex flex-wrap items-center gap-3">
-            <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#DCE9E3]/80 text-[#064E4B]">
+            <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#E0F2FE]/80 text-[#0A3977]">
               {service.category} Specialization
             </span>
             <span className="text-xs text-neutral-500 flex items-center gap-1.5 font-medium">
-              <Clock className="w-3.5 h-3.5 text-[#C6A56B]" />
+              <Clock className="w-3.5 h-3.5 text-[#00AEEF]" />
               {service.duration}
             </span>
           </div>
 
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#064E4B] leading-tight">
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#0A3977] leading-tight">
             {service.title}
           </h1>
 
@@ -95,16 +95,16 @@ export default async function ServiceDetailPage({
           <div className="pt-4 flex flex-wrap gap-4">
             <Link
               href={`/book-appointment?service=${encodeURIComponent(service.title)}`}
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#064E4B] hover:bg-[#0F766E] text-white text-xs font-bold transition-all shadow-md"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#0A3977] hover:bg-[#0077B6] text-white text-xs font-bold transition-all shadow-md"
             >
-              <Calendar className="w-4 h-4 text-[#C6A56B]" />
+              <Calendar className="w-4 h-4 text-[#00AEEF]" />
               <span>Book Consultation for this Condition</span>
             </Link>
             <a
               href={`tel:${clinicInfo.phone}`}
-              className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl border border-[#DCE9E3] hover:bg-[#FAF8F5] text-[#064E4B] text-xs font-semibold transition-colors"
+              className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl border border-[#E0F2FE] hover:bg-[#F0F8FF] text-[#0A3977] text-xs font-semibold transition-colors"
             >
-              <Phone className="w-3.5 h-3.5 text-[#0F766E]" />
+              <Phone className="w-3.5 h-3.5 text-[#0077B6]" />
               <span>Call Reception</span>
             </a>
           </div>
@@ -114,10 +114,10 @@ export default async function ServiceDetailPage({
       {/* Symptoms Addressed & Clinical Assessment */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Symptoms / Indications */}
-        <div className="bg-[#FAF8F5] rounded-3xl p-8 border border-[#DCE9E3]">
+        <div className="bg-[#F0F8FF] rounded-3xl p-8 border border-[#E0F2FE]">
           <div className="flex items-center gap-2 mb-4">
-            <ShieldAlert className="w-5 h-5 text-[#0F766E]" />
-            <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#064E4B]">
+            <ShieldAlert className="w-5 h-5 text-[#0077B6]" />
+            <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#0A3977]">
               Common Symptoms &amp; Indications
             </h2>
           </div>
@@ -128,7 +128,7 @@ export default async function ServiceDetailPage({
           <ul className="space-y-3">
             {service.symptoms.map((symptom, idx) => (
               <li key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-neutral-800">
-                <CheckCircle2 className="w-4 h-4 text-[#0F766E] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#0077B6] shrink-0 mt-0.5" />
                 <span>{symptom}</span>
               </li>
             ))}
@@ -136,10 +136,10 @@ export default async function ServiceDetailPage({
         </div>
 
         {/* How Assessment Works */}
-        <div className="bg-white rounded-3xl p-8 border border-[#DCE9E3] shadow-xs">
+        <div className="bg-white rounded-3xl p-8 border border-[#E0F2FE] shadow-xs">
           <div className="flex items-center gap-2 mb-4">
-            <Stethoscope className="w-5 h-5 text-[#C6A56B]" />
-            <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#064E4B]">
+            <Stethoscope className="w-5 h-5 text-[#00AEEF]" />
+            <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#0A3977]">
               How Assessment &amp; Diagnosis Works
             </h2>
           </div>
@@ -150,7 +150,7 @@ export default async function ServiceDetailPage({
           <ul className="space-y-3">
             {service.assessmentProcedure.map((step, idx) => (
               <li key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-neutral-800">
-                <div className="w-5 h-5 rounded-full bg-[#064E4B]/10 text-[#064E4B] flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">
+                <div className="w-5 h-5 rounded-full bg-[#0A3977]/10 text-[#0A3977] flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">
                   {idx + 1}
                 </div>
                 <span>{step}</span>
@@ -161,13 +161,13 @@ export default async function ServiceDetailPage({
       </section>
 
       {/* What Patients Can Expect & Key Benefits */}
-      <section className="bg-white rounded-3xl p-8 sm:p-12 border border-[#DCE9E3]">
+      <section className="bg-white rounded-3xl p-8 sm:p-12 border border-[#E0F2FE]">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           <div className="lg:col-span-6 space-y-4">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#C6A56B]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#00AEEF]">
               Session Walkthrough
             </span>
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#064E4B]">
+            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#0A3977]">
               What to Expect During Your Treatment
             </h3>
             <p className="text-xs text-neutral-600 leading-relaxed">
@@ -177,24 +177,24 @@ export default async function ServiceDetailPage({
             <ul className="space-y-3 pt-2">
               {service.whatToExpect.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-neutral-700">
-                  <div className="w-2 h-2 rounded-full bg-[#0F766E] shrink-0 mt-1.5" />
+                  <div className="w-2 h-2 rounded-full bg-[#0077B6] shrink-0 mt-1.5" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="lg:col-span-6 space-y-4 bg-[#FAF8F5] p-6 sm:p-8 rounded-2xl border border-[#DCE9E3]">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#0F766E]">
+          <div className="lg:col-span-6 space-y-4 bg-[#F0F8FF] p-6 sm:p-8 rounded-2xl border border-[#E0F2FE]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#0077B6]">
               Clinical Outcomes
             </span>
-            <h3 className="font-serif text-2xl font-bold text-[#064E4B]">
+            <h3 className="font-serif text-2xl font-bold text-[#0A3977]">
               Expected Rehabilitation Benefits
             </h3>
             <ul className="space-y-3 pt-2">
               {service.clinicalBenefits.map((benefit, idx) => (
                 <li key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-neutral-700">
-                  <CheckCircle2 className="w-4 h-4 text-[#0F766E] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#0077B6] shrink-0 mt-0.5" />
                   <span>{benefit}</span>
                 </li>
               ))}
@@ -207,10 +207,10 @@ export default async function ServiceDetailPage({
       {service.faqs && service.faqs.length > 0 && (
         <section className="max-w-4xl mx-auto w-full">
           <div className="text-center mb-8">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#C6A56B]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#00AEEF]">
               Common Questions
             </span>
-            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#064E4B] mt-1">
+            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0A3977] mt-1">
               Frequently Asked Questions: {service.shortTitle}
             </h2>
           </div>
@@ -219,7 +219,7 @@ export default async function ServiceDetailPage({
       )}
 
       {/* Medical Responsibility Disclaimer */}
-      <div className="p-6 rounded-3xl bg-[#FAF8F5] border border-[#DCE9E3] text-xs text-neutral-600 leading-relaxed">
+      <div className="p-6 rounded-3xl bg-[#F0F8FF] border border-[#E0F2FE] text-xs text-neutral-600 leading-relaxed">
         <strong>Medical Notice:</strong> Information on this page is educational and does not constitute
         individual diagnosis or a guarantee of clinical outcomes. Treatment plans are formulated strictly
         upon comprehensive physical examination by Dr. Sakshi Kocher.

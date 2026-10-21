@@ -15,18 +15,18 @@ export default function TermsPage() {
       <Breadcrumb items={[{ label: "Terms & Conditions" }]} />
 
       <header className="space-y-3">
-        <span className="text-xs font-bold uppercase tracking-widest text-[#C6A56B] bg-[#C6A56B]/10 px-3 py-1 rounded-full inline-block">
+        <span className="text-xs font-bold uppercase tracking-widest text-[#00AEEF] bg-[#00AEEF]/10 px-3 py-1 rounded-full inline-block">
           Clinical Terms &amp; Policies
         </span>
-        <h1 className="font-serif text-3xl sm:text-4xl font-bold text-[#064E4B]">
+        <h1 className="font-serif text-3xl sm:text-4xl font-bold text-[#0A3977]">
           Terms and Conditions
         </h1>
         <p className="text-xs text-neutral-500">Effective Date: October 2026</p>
       </header>
 
-      <div className="space-y-8 text-neutral-700 text-xs sm:text-sm leading-relaxed bg-white rounded-3xl p-8 sm:p-12 border border-[#DCE9E3] shadow-xs">
-        <section className="space-y-3 p-5 rounded-2xl bg-[#FAF8F5] border border-[#DCE9E3]">
-          <h2 className="font-serif text-lg font-bold text-[#064E4B] uppercase tracking-wider">
+      <div className="space-y-8 text-neutral-700 text-xs sm:text-sm leading-relaxed bg-white rounded-3xl p-8 sm:p-12 border border-[#E0F2FE] shadow-xs">
+        <section className="space-y-3 p-5 rounded-2xl bg-[#F0F8FF] border border-[#E0F2FE]">
+          <h2 className="font-serif text-lg font-bold text-[#0A3977] uppercase tracking-wider">
             Critical Medical Disclaimer
           </h2>
           <p className="text-neutral-700">
@@ -43,7 +43,7 @@ export default function TermsPage() {
         </section>
 
         <section className="space-y-3">
-          <h2 className="font-serif text-xl font-bold text-[#064E4B]">1. Appointment Scheduling &amp; Consultations</h2>
+          <h2 className="font-serif text-xl font-bold text-[#0A3977]">1. Appointment Scheduling &amp; Consultations</h2>
           <p>
             Submitting an appointment request through this website registers an enquiry with our reception desk.
             An appointment is confirmed only once our clinic reception contacts you and confirms schedule
@@ -56,7 +56,7 @@ export default function TermsPage() {
         </section>
 
         <section className="space-y-3">
-          <h2 className="font-serif text-xl font-bold text-[#064E4B]">2. Clinical Assessment &amp; Informed Consent</h2>
+          <h2 className="font-serif text-xl font-bold text-[#0A3977]">2. Clinical Assessment &amp; Informed Consent</h2>
           <p>
             Prior to administering physical therapy modalities (such as electrotherapy, therapeutic ultrasound,
             dry cupping, or spinal traction), Dr. Sakshi Kocher will review your medical history and discuss
@@ -66,7 +66,7 @@ export default function TermsPage() {
         </section>
 
         <section className="space-y-3">
-          <h2 className="font-serif text-xl font-bold text-[#064E4B]">3. Intellectual Property</h2>
+          <h2 className="font-serif text-xl font-bold text-[#0A3977]">3. Intellectual Property</h2>
           <p>
             All website design, branding, custom 3D anatomical components, text, and educational materials are
             the intellectual property of {clinicInfo.name} and CodeKap. Reproduction or scraping without prior
@@ -75,7 +75,7 @@ export default function TermsPage() {
         </section>
 
         <section className="space-y-3">
-          <h2 className="font-serif text-xl font-bold text-[#064E4B]">4. Clinic Contact</h2>
+          <h2 className="font-serif text-xl font-bold text-[#0A3977]">4. Clinic Contact</h2>
           <p>
             For inquiries regarding our terms, please contact:
           </p>

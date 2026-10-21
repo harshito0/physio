@@ -86,11 +86,11 @@ export default function YouTubeVideoSection() {
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
         <div className="max-w-2xl">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#064E4B] border border-[#C6A56B]/40 text-[#E5C687] text-xs font-mono font-bold uppercase tracking-wider mb-3 shadow-xs">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0A3977] border border-[#00AEEF]/40 text-[#38BDF8] text-xs font-mono font-bold uppercase tracking-wider mb-3 shadow-xs">
             <YouTubeIcon className="w-3.5 h-3.5 text-[#FF4B4B]" />
             <span>Clinical Video Library</span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#064E4B] leading-tight">
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#0A3977] leading-tight">
             Patient Education &amp; Rehabilitation Videos
           </h2>
           <p className="mt-3 text-sm sm:text-base text-neutral-700 leading-relaxed">
@@ -115,14 +115,14 @@ export default function YouTubeVideoSection() {
       {/* Main Video Theatre Showcase */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* Left Column: Featured Player / Screen */}
-        <div className="lg:col-span-7 bg-[#042624] rounded-3xl overflow-hidden border border-[#C6A56B]/40 shadow-2xl">
+        <div className="lg:col-span-7 bg-[#061B36] rounded-3xl overflow-hidden border border-[#00AEEF]/40 shadow-2xl">
           {/* Video Preview / Embed Container (16:9 Aspect) */}
-          <div className="relative aspect-video bg-gradient-to-br from-[#064E4B] via-[#042624] to-[#021816] flex items-center justify-center overflow-hidden group">
+          <div className="relative aspect-video bg-gradient-to-br from-[#0A3977] via-[#061B36] to-[#040D1A] flex items-center justify-center overflow-hidden group">
             {/* Ambient Background Grid Pattern */}
             <div className="absolute inset-0 bg-clinical-grid-dark opacity-40 pointer-events-none" />
 
             {/* Cinematic Radial Glow */}
-            <div className="absolute w-72 h-72 rounded-full bg-[#0F766E]/30 blur-3xl pointer-events-none" />
+            <div className="absolute w-72 h-72 rounded-full bg-[#0077B6]/30 blur-3xl pointer-events-none" />
 
             {/* Video Preview Center Artwork */}
             <div className="relative z-10 flex flex-col items-center justify-center p-8 text-center max-w-lg">
@@ -136,7 +136,7 @@ export default function YouTubeVideoSection() {
                 <Play className="w-8 h-8 fill-white translate-x-0.5 text-white" />
               </a>
 
-              <span className="inline-block px-3 py-1 rounded-full bg-[#C6A56B]/20 border border-[#C6A56B] text-[#F5E6CA] text-[10px] font-mono uppercase tracking-widest font-bold mb-2">
+              <span className="inline-block px-3 py-1 rounded-full bg-[#00AEEF]/20 border border-[#00AEEF] text-[#E0F2FE] text-[10px] font-mono uppercase tracking-widest font-bold mb-2">
                 {activeVideo.tag} • {activeVideo.duration}
               </span>
 
@@ -144,7 +144,7 @@ export default function YouTubeVideoSection() {
                 {activeVideo.title}
               </h3>
 
-              <p className="mt-2 text-xs text-[#DCE9E3]/80 line-clamp-2">
+              <p className="mt-2 text-xs text-[#E0F2FE]/80 line-clamp-2">
                 {activeVideo.description}
               </p>
 
@@ -152,7 +152,7 @@ export default function YouTubeVideoSection() {
                 href={clinicInfo.youtubeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-[#E5C687] hover:text-white transition-colors underline underline-offset-4"
+                className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-[#38BDF8] hover:text-white transition-colors underline underline-offset-4"
               >
                 <span>Watch full episode on YouTube @{clinicInfo.youtubeHandle}</span>
                 <ExternalLink className="w-3.5 h-3.5" />
@@ -165,20 +165,20 @@ export default function YouTubeVideoSection() {
                 <YouTubeIcon className="w-3.5 h-3.5 text-[#FF4B4B]" />
                 <span className="font-semibold text-white">Dr. Sakshi Kochhar</span>
               </div>
-              <span className="text-[11px] font-mono px-2.5 py-1 rounded-md bg-black/60 backdrop-blur-md text-[#C6A56B]">
+              <span className="text-[11px] font-mono px-2.5 py-1 rounded-md bg-black/60 backdrop-blur-md text-[#00AEEF]">
                 HD 1080p
               </span>
             </div>
           </div>
 
           {/* Player Metadata Drawer */}
-          <div className="p-6 sm:p-8 bg-[#FAF8F5] text-[#202A2A] border-t border-[#DCE9E3]">
+          <div className="p-6 sm:p-8 bg-[#F0F8FF] text-[#0F172A] border-t border-[#E0F2FE]">
             <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
-              <span className="text-xs font-mono font-bold text-[#0F766E] uppercase tracking-wider">
+              <span className="text-xs font-mono font-bold text-[#0077B6] uppercase tracking-wider">
                 Clinical Overview &amp; Learning Objectives:
               </span>
               <span className="text-xs text-neutral-500 flex items-center gap-1.5">
-                <Clock className="w-3.5 h-3.5 text-[#C6A56B]" />
+                <Clock className="w-3.5 h-3.5 text-[#00AEEF]" />
                 <span>Runtime: {activeVideo.duration}</span>
               </span>
             </div>
@@ -187,17 +187,17 @@ export default function YouTubeVideoSection() {
               {activeVideo.description}
             </p>
 
-            <div className="space-y-2 pt-2 border-t border-[#DCE9E3]">
-              <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#064E4B] block">
+            <div className="space-y-2 pt-2 border-t border-[#E0F2FE]">
+              <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#0A3977] block">
                 Key Video Takeaways:
               </span>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                 {activeVideo.highlights.map((hl, i) => (
                   <div
                     key={i}
-                    className="flex items-start gap-2 p-2 rounded-xl bg-white border border-[#DCE9E3] text-xs text-neutral-800"
+                    className="flex items-start gap-2 p-2 rounded-xl bg-white border border-[#E0F2FE] text-xs text-neutral-800"
                   >
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#0F766E] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#0077B6] shrink-0 mt-0.5" />
                     <span>{hl}</span>
                   </div>
                 ))}
@@ -209,7 +209,7 @@ export default function YouTubeVideoSection() {
         {/* Right Column: Interactive Video Playlist */}
         <div className="lg:col-span-5 space-y-4">
           <div className="flex items-center justify-between px-2">
-            <span className="text-xs font-mono uppercase tracking-widest text-[#064E4B] font-bold">
+            <span className="text-xs font-mono uppercase tracking-widest text-[#0A3977] font-bold">
               Select Video from Channel:
             </span>
             <span className="text-xs font-mono text-neutral-500">
@@ -226,16 +226,16 @@ export default function YouTubeVideoSection() {
                   onClick={() => setActiveVideo(video)}
                   className={`w-full text-left p-4 sm:p-5 rounded-2xl border transition-all duration-200 flex items-start gap-4 ${
                     isSelected
-                      ? "bg-[#064E4B] text-white border-[#C6A56B] shadow-xl scale-[1.01]"
-                      : "bg-white text-[#202A2A] border-[#DCE9E3] hover:border-[#0F766E] hover:shadow-md"
+                      ? "bg-[#0A3977] text-white border-[#00AEEF] shadow-xl scale-[1.01]"
+                      : "bg-white text-[#0F172A] border-[#E0F2FE] hover:border-[#0077B6] hover:shadow-md"
                   }`}
                 >
                   {/* Video Thumbnail Box */}
                   <div
                     className={`w-14 h-14 rounded-xl flex items-center justify-center shrink-0 border ${
                       isSelected
-                        ? "bg-[#C6A56B] text-[#042624] border-[#E5C687]"
-                        : "bg-[#064E4B]/10 text-[#064E4B] border-[#DCE9E3]"
+                        ? "bg-[#00AEEF] text-[#061B36] border-[#38BDF8]"
+                        : "bg-[#0A3977]/10 text-[#0A3977] border-[#E0F2FE]"
                     }`}
                   >
                     <Play className="w-5 h-5 fill-current" />
@@ -247,20 +247,20 @@ export default function YouTubeVideoSection() {
                       <span
                         className={`text-[10px] font-mono uppercase tracking-wider font-bold px-2 py-0.5 rounded-full ${
                           isSelected
-                            ? "bg-[#C6A56B]/20 text-[#F5E6CA] border border-[#C6A56B]"
-                            : "bg-[#0F766E]/10 text-[#0F766E]"
+                            ? "bg-[#00AEEF]/20 text-[#E0F2FE] border border-[#00AEEF]"
+                            : "bg-[#0077B6]/10 text-[#0077B6]"
                         }`}
                       >
                         {video.tag}
                       </span>
-                      <span className={`text-[11px] font-mono ${isSelected ? "text-[#DCE9E3]" : "text-neutral-500"}`}>
+                      <span className={`text-[11px] font-mono ${isSelected ? "text-[#E0F2FE]" : "text-neutral-500"}`}>
                         {video.duration}
                       </span>
                     </div>
 
                     <h4
                       className={`font-serif text-base font-bold leading-snug truncate ${
-                        isSelected ? "text-white" : "text-[#064E4B]"
+                        isSelected ? "text-white" : "text-[#0A3977]"
                       }`}
                     >
                       {video.title}
@@ -268,7 +268,7 @@ export default function YouTubeVideoSection() {
 
                     <p
                       className={`text-xs mt-1 line-clamp-1 ${
-                        isSelected ? "text-[#DCE9E3]/80" : "text-neutral-500"
+                        isSelected ? "text-[#E0F2FE]/80" : "text-neutral-500"
                       }`}
                     >
                       {video.description}
@@ -280,13 +280,13 @@ export default function YouTubeVideoSection() {
           </div>
 
           {/* YouTube Channel Callout Card */}
-          <div className="p-5 rounded-2xl bg-gradient-to-br from-[#FAF8F5] to-white border border-[#DCE9E3] shadow-xs flex items-center justify-between gap-4">
+          <div className="p-5 rounded-2xl bg-gradient-to-br from-[#F0F8FF] to-white border border-[#E0F2FE] shadow-xs flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-red-600/10 flex items-center justify-center">
                 <YouTubeIcon className="w-6 h-6 text-red-600" />
               </div>
               <div>
-                <h5 className="font-serif text-sm font-bold text-[#064E4B]">
+                <h5 className="font-serif text-sm font-bold text-[#0A3977]">
                   Official YouTube Channel
                 </h5>
                 <p className="text-xs text-neutral-600">@{clinicInfo.youtubeHandle}</p>
@@ -297,7 +297,7 @@ export default function YouTubeVideoSection() {
               href={clinicInfo.youtubeUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-bold px-4 py-2 rounded-xl bg-[#064E4B] hover:bg-[#0F766E] text-white transition-colors"
+              className="text-xs font-bold px-4 py-2 rounded-xl bg-[#0A3977] hover:bg-[#0077B6] text-white transition-colors"
             >
               Open Channel &rarr;
             </a>

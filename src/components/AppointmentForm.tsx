@@ -95,15 +95,15 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
     const waUrl = `https://wa.me/917087391488?text=${waText}`;
 
     return (
-      <div className="bg-white rounded-3xl p-6 sm:p-10 border border-[#DCE9E3] shadow-lg shadow-teal-950/5 text-center">
-        <div className="w-16 h-16 rounded-full bg-[#0F766E]/10 text-[#0F766E] mx-auto flex items-center justify-center mb-4">
+      <div className="bg-white rounded-3xl p-6 sm:p-10 border border-[#E0F2FE] shadow-lg shadow-teal-950/5 text-center">
+        <div className="w-16 h-16 rounded-full bg-[#0077B6]/10 text-[#0077B6] mx-auto flex items-center justify-center mb-4">
           <CheckCircle2 className="w-9 h-9" />
         </div>
 
-        <span className="text-xs font-bold uppercase tracking-wider text-[#C6A56B]">
+        <span className="text-xs font-bold uppercase tracking-wider text-[#00AEEF]">
           Appointment Request Logged
         </span>
-        <h3 className="text-2xl font-serif text-[#064E4B] font-bold mt-1 mb-2">
+        <h3 className="text-2xl font-serif text-[#0A3977] font-bold mt-1 mb-2">
           Thank you, {submissionSuccess.details.patientName}
         </h3>
         <p className="text-sm text-neutral-600 max-w-md mx-auto mb-6">
@@ -112,10 +112,10 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
         </p>
 
         {/* Reference details box */}
-        <div className="bg-[#F8F6F0] rounded-2xl p-4 max-w-md mx-auto text-left text-xs space-y-2 border border-[#DCE9E3] mb-6">
-          <div className="flex justify-between items-center pb-2 border-b border-[#DCE9E3]">
+        <div className="bg-[#F8FAFC] rounded-2xl p-4 max-w-md mx-auto text-left text-xs space-y-2 border border-[#E0F2FE] mb-6">
+          <div className="flex justify-between items-center pb-2 border-b border-[#E0F2FE]">
             <span className="text-neutral-500 font-medium">Tracking Reference:</span>
-            <span className="font-mono font-bold text-[#064E4B] text-sm">
+            <span className="font-mono font-bold text-[#0A3977] text-sm">
               {submissionSuccess.referenceCode}
             </span>
           </div>
@@ -145,14 +145,14 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
             href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#0F766E] hover:bg-[#064E4B] text-white text-xs font-semibold transition-all shadow-sm"
+            className="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#0077B6] hover:bg-[#0A3977] text-white text-xs font-semibold transition-all shadow-sm"
           >
-            <MessageCircle className="w-4 h-4 text-[#14B8A6]" />
+            <MessageCircle className="w-4 h-4 text-[#00AEEF]" />
             <span>Confirm Faster on WhatsApp</span>
           </a>
           <button
             onClick={() => setSubmissionSuccess(null)}
-            className="w-full sm:w-auto px-5 py-3 rounded-xl border border-[#DCE9E3] hover:bg-[#F8F6F0] text-[#064E4B] text-xs font-semibold transition-colors"
+            className="w-full sm:w-auto px-5 py-3 rounded-xl border border-[#E0F2FE] hover:bg-[#F8FAFC] text-[#0A3977] text-xs font-semibold transition-colors"
           >
             Submit Another Request
           </button>
@@ -164,7 +164,7 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-white rounded-3xl p-6 sm:p-10 border border-[#DCE9E3] shadow-lg shadow-teal-950/5 relative"
+      className="bg-white rounded-3xl p-6 sm:p-10 border border-[#E0F2FE] shadow-lg shadow-teal-950/5 relative"
     >
       {/* Honeypot field for anti-spam bots */}
       <input
@@ -179,11 +179,11 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
       />
 
       <div className="mb-6">
-        <span className="text-xs font-semibold uppercase tracking-wider text-[#C6A56B] flex items-center gap-1.5">
-          <Calendar className="w-4 h-4 text-[#0F766E]" />
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#00AEEF] flex items-center gap-1.5">
+          <Calendar className="w-4 h-4 text-[#0077B6]" />
           Priority Clinical Booking
         </span>
-        <h3 className="text-2xl font-serif text-[#064E4B] font-bold mt-1">
+        <h3 className="text-2xl font-serif text-[#0A3977] font-bold mt-1">
           Request Your Consultation
         </h3>
         <p className="text-xs text-neutral-600 mt-1">
@@ -204,7 +204,7 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
         {/* Patient Name */}
         <div>
-          <label htmlFor="patientName" className="block text-xs font-semibold text-[#202A2A] mb-1.5">
+          <label htmlFor="patientName" className="block text-xs font-semibold text-[#0F172A] mb-1.5">
             Patient Full Name <span className="text-red-500">*</span>
           </label>
           <input
@@ -214,13 +214,13 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
             placeholder="e.g. Rajesh Sharma"
             value={formData.patientName}
             onChange={(e) => setFormData({ ...formData, patientName: e.target.value })}
-            className="w-full px-4 py-2.5 rounded-xl border border-[#DCE9E3] focus:border-[#0F766E] focus:ring-2 focus:ring-[#0F766E]/20 text-xs text-[#202A2A] outline-none transition-all"
+            className="w-full px-4 py-2.5 rounded-xl border border-[#E0F2FE] focus:border-[#0077B6] focus:ring-2 focus:ring-[#0077B6]/20 text-xs text-[#0F172A] outline-none transition-all"
           />
         </div>
 
         {/* Contact Phone */}
         <div>
-          <label htmlFor="phone" className="block text-xs font-semibold text-[#202A2A] mb-1.5">
+          <label htmlFor="phone" className="block text-xs font-semibold text-[#0F172A] mb-1.5">
             Phone Number <span className="text-red-500">*</span>
           </label>
           <input
@@ -230,7 +230,7 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
             placeholder="+91 98765 43210"
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-            className="w-full px-4 py-2.5 rounded-xl border border-[#DCE9E3] focus:border-[#0F766E] focus:ring-2 focus:ring-[#0F766E]/20 text-xs text-[#202A2A] outline-none transition-all"
+            className="w-full px-4 py-2.5 rounded-xl border border-[#E0F2FE] focus:border-[#0077B6] focus:ring-2 focus:ring-[#0077B6]/20 text-xs text-[#0F172A] outline-none transition-all"
           />
         </div>
       </div>
@@ -238,7 +238,7 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
         {/* Email */}
         <div>
-          <label htmlFor="email" className="block text-xs font-semibold text-[#202A2A] mb-1.5">
+          <label htmlFor="email" className="block text-xs font-semibold text-[#0F172A] mb-1.5">
             Email Address <span className="text-neutral-400 font-normal">(Optional)</span>
           </label>
           <input
@@ -247,20 +247,20 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
             placeholder="name@example.com"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full px-4 py-2.5 rounded-xl border border-[#DCE9E3] focus:border-[#0F766E] focus:ring-2 focus:ring-[#0F766E]/20 text-xs text-[#202A2A] outline-none transition-all"
+            className="w-full px-4 py-2.5 rounded-xl border border-[#E0F2FE] focus:border-[#0077B6] focus:ring-2 focus:ring-[#0077B6]/20 text-xs text-[#0F172A] outline-none transition-all"
           />
         </div>
 
         {/* Clinical Service */}
         <div>
-          <label htmlFor="service" className="block text-xs font-semibold text-[#202A2A] mb-1.5">
+          <label htmlFor="service" className="block text-xs font-semibold text-[#0F172A] mb-1.5">
             Requested Specialty / Service <span className="text-red-500">*</span>
           </label>
           <select
             id="service"
             value={formData.service}
             onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-            className="w-full px-4 py-2.5 rounded-xl border border-[#DCE9E3] focus:border-[#0F766E] focus:ring-2 focus:ring-[#0F766E]/20 text-xs text-[#202A2A] outline-none transition-all bg-white"
+            className="w-full px-4 py-2.5 rounded-xl border border-[#E0F2FE] focus:border-[#0077B6] focus:ring-2 focus:ring-[#0077B6]/20 text-xs text-[#0F172A] outline-none transition-all bg-white"
           >
             {verifiedPracticeAreas.map((svc, i) => (
               <option key={i} value={svc}>
@@ -274,7 +274,7 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
         {/* Preferred Date */}
         <div>
-          <label htmlFor="preferredDate" className="block text-xs font-semibold text-[#202A2A] mb-1.5">
+          <label htmlFor="preferredDate" className="block text-xs font-semibold text-[#0F172A] mb-1.5">
             Preferred Date <span className="text-red-500">*</span>
           </label>
           <input
@@ -284,20 +284,20 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
             min={todayStr}
             value={formData.preferredDate}
             onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
-            className="w-full px-4 py-2.5 rounded-xl border border-[#DCE9E3] focus:border-[#0F766E] focus:ring-2 focus:ring-[#0F766E]/20 text-xs text-[#202A2A] outline-none transition-all"
+            className="w-full px-4 py-2.5 rounded-xl border border-[#E0F2FE] focus:border-[#0077B6] focus:ring-2 focus:ring-[#0077B6]/20 text-xs text-[#0F172A] outline-none transition-all"
           />
         </div>
 
         {/* Preferred Time Window */}
         <div>
-          <label htmlFor="preferredTime" className="block text-xs font-semibold text-[#202A2A] mb-1.5">
+          <label htmlFor="preferredTime" className="block text-xs font-semibold text-[#0F172A] mb-1.5">
             Preferred Time Window
           </label>
           <select
             id="preferredTime"
             value={formData.preferredTime}
             onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
-            className="w-full px-4 py-2.5 rounded-xl border border-[#DCE9E3] focus:border-[#0F766E] focus:ring-2 focus:ring-[#0F766E]/20 text-xs text-[#202A2A] outline-none transition-all bg-white"
+            className="w-full px-4 py-2.5 rounded-xl border border-[#E0F2FE] focus:border-[#0077B6] focus:ring-2 focus:ring-[#0077B6]/20 text-xs text-[#0F172A] outline-none transition-all bg-white"
           >
             <option value="Morning (9:00 AM - 1:00 PM)">Morning (9:00 AM - 1:00 PM)</option>
             <option value="Afternoon (1:00 PM - 4:00 PM)">Afternoon (1:00 PM - 4:00 PM)</option>
@@ -309,7 +309,7 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
 
       {/* Message / Symptoms */}
       <div className="mb-4">
-        <label htmlFor="message" className="block text-xs font-semibold text-[#202A2A] mb-1.5">
+        <label htmlFor="message" className="block text-xs font-semibold text-[#0F172A] mb-1.5">
           Brief Description of Pain or Injury <span className="text-neutral-400 font-normal">(Optional)</span>
         </label>
         <textarea
@@ -318,7 +318,7 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
           placeholder="e.g. Suffering from lower back pain radiating down my left leg for 3 weeks after gym workout..."
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          className="w-full px-4 py-2.5 rounded-xl border border-[#DCE9E3] focus:border-[#0F766E] focus:ring-2 focus:ring-[#0F766E]/20 text-xs text-[#202A2A] outline-none transition-all resize-none"
+          className="w-full px-4 py-2.5 rounded-xl border border-[#E0F2FE] focus:border-[#0077B6] focus:ring-2 focus:ring-[#0077B6]/20 text-xs text-[#0F172A] outline-none transition-all resize-none"
         />
       </div>
 
@@ -330,7 +330,7 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
           required
           checked={formData.consent}
           onChange={(e) => setFormData({ ...formData, consent: e.target.checked })}
-          className="mt-0.5 h-4 w-4 rounded border-[#DCE9E3] text-[#0F766E] focus:ring-[#0F766E]"
+          className="mt-0.5 h-4 w-4 rounded border-[#E0F2FE] text-[#0077B6] focus:ring-[#0077B6]"
         />
         <label htmlFor="consent" className="text-[11px] text-neutral-600 leading-snug">
           I consent to Dr. Sakshi&apos;s Zenlife Physio reception contacting me via phone, SMS, or WhatsApp regarding
@@ -343,7 +343,7 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full sm:flex-1 py-3 px-6 rounded-xl bg-[#064E4B] hover:bg-[#0F766E] text-white font-semibold text-sm transition-all shadow-md hover:shadow-lg disabled:opacity-60 flex items-center justify-center gap-2"
+          className="w-full sm:flex-1 py-3 px-6 rounded-xl bg-[#0A3977] hover:bg-[#0077B6] text-white font-semibold text-sm transition-all shadow-md hover:shadow-lg disabled:opacity-60 flex items-center justify-center gap-2"
         >
           {isSubmitting ? (
             <>
@@ -352,7 +352,7 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
             </>
           ) : (
             <>
-              <Send className="w-4 h-4 text-[#C6A56B]" />
+              <Send className="w-4 h-4 text-[#00AEEF]" />
               <span>Confirm Appointment Request</span>
             </>
           )}
@@ -362,20 +362,20 @@ export default function AppointmentForm({ defaultService = "" }: { defaultServic
           href={clinicInfo.whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full sm:w-auto py-3 px-4 rounded-xl border border-[#DCE9E3] hover:border-[#14B8A6] text-[#064E4B] text-xs font-semibold transition-colors flex items-center justify-center gap-1.5 bg-[#F8F6F0]/60"
+          className="w-full sm:w-auto py-3 px-4 rounded-xl border border-[#E0F2FE] hover:border-[#00AEEF] text-[#0A3977] text-xs font-semibold transition-colors flex items-center justify-center gap-1.5 bg-[#F8FAFC]/60"
         >
-          <MessageCircle className="w-4 h-4 text-[#14B8A6]" />
+          <MessageCircle className="w-4 h-4 text-[#00AEEF]" />
           <span>Ask on WhatsApp</span>
         </a>
       </div>
 
-      <div className="mt-4 pt-4 border-t border-[#DCE9E3]/60 flex items-center justify-between text-[11px] text-neutral-500">
+      <div className="mt-4 pt-4 border-t border-[#E0F2FE]/60 flex items-center justify-between text-[11px] text-neutral-500">
         <span className="flex items-center gap-1.5">
-          <Shield className="w-3.5 h-3.5 text-[#0F766E]" />
+          <Shield className="w-3.5 h-3.5 text-[#0077B6]" />
           Encrypted &amp; HIPAA-conscious privacy
         </span>
         <span className="flex items-center gap-1">
-          <Clock className="w-3.5 h-3.5 text-[#C6A56B]" />
+          <Clock className="w-3.5 h-3.5 text-[#00AEEF]" />
           Prompt response within clinic hours
         </span>
       </div>

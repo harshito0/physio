@@ -32,10 +32,10 @@ export default function SpatialServiceUniverse({ onOpenBooking }: { onOpenBookin
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
         <div className="max-w-2xl">
-          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#C6A56B] bg-[#064E4B] px-3.5 py-1.5 rounded-full inline-block mb-3 border border-[#C6A56B]/30 shadow-xs">
+          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#00AEEF] bg-[#0A3977] px-3.5 py-1.5 rounded-full inline-block mb-3 border border-[#00AEEF]/30 shadow-xs">
             Spatial Clinical Universe
           </span>
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#064E4B] leading-tight">
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#0A3977] leading-tight">
             Comprehensive Clinical Offerings
           </h2>
           <p className="mt-3 text-sm sm:text-base text-neutral-600 leading-relaxed">
@@ -52,8 +52,8 @@ export default function SpatialServiceUniverse({ onOpenBooking }: { onOpenBookin
               onClick={() => setSelectedCategory(cat)}
               className={`px-4 py-2 rounded-xl text-xs font-mono font-semibold transition-all ${
                 selectedCategory === cat
-                  ? "bg-[#064E4B] text-white shadow-md scale-105"
-                  : "bg-white text-neutral-600 border border-[#DCE9E3] hover:border-[#0F766E]"
+                  ? "bg-[#0A3977] text-white shadow-md scale-105"
+                  : "bg-white text-neutral-600 border border-[#E0F2FE] hover:border-[#0077B6]"
               }`}
             >
               {cat}
@@ -78,26 +78,26 @@ export default function SpatialServiceUniverse({ onOpenBooking }: { onOpenBookin
               scale: 1.02,
               transition: { duration: 0.25 },
             }}
-            className="group relative rounded-3xl p-7 bg-gradient-to-b from-white to-[#FAF8F5] border border-[#DCE9E3] hover:border-[#C6A56B] shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between overflow-hidden cursor-pointer"
+            className="group relative rounded-3xl p-7 bg-gradient-to-b from-white to-[#F0F8FF] border border-[#E0F2FE] hover:border-[#00AEEF] shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col justify-between overflow-hidden cursor-pointer"
             onClick={() => setActiveServiceModal(service)}
           >
             {/* Top spatial glow accent */}
-            <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-gradient-to-br from-[#14B8A6]/20 to-transparent blur-2xl group-hover:scale-150 transition-transform pointer-events-none" />
+            <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-gradient-to-br from-[#00AEEF]/20 to-transparent blur-2xl group-hover:scale-150 transition-transform pointer-events-none" />
 
             <div>
               {/* Category & Duration Bar */}
               <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-[#064E4B]/10 text-[#064E4B] border border-[#064E4B]/20">
+                <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-[#0A3977]/10 text-[#0A3977] border border-[#0A3977]/20">
                   {service.category}
                 </span>
                 <span className="text-xs text-neutral-500 font-mono flex items-center gap-1">
-                  <Clock className="w-3.5 h-3.5 text-[#C6A56B]" />
+                  <Clock className="w-3.5 h-3.5 text-[#00AEEF]" />
                   {service.duration}
                 </span>
               </div>
 
               {/* Title */}
-              <h3 className="font-serif text-2xl font-bold text-[#064E4B] group-hover:text-[#0F766E] transition-colors leading-snug mb-3">
+              <h3 className="font-serif text-2xl font-bold text-[#0A3977] group-hover:text-[#0077B6] transition-colors leading-snug mb-3">
                 {service.title}
               </h3>
 
@@ -113,7 +113,7 @@ export default function SpatialServiceUniverse({ onOpenBooking }: { onOpenBookin
                 </span>
                 {service.symptoms.slice(0, 3).map((sym, sIdx) => (
                   <div key={sIdx} className="flex items-start gap-2 text-xs text-neutral-700">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#0F766E] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#0077B6] shrink-0 mt-0.5" />
                     <span className="line-clamp-1">{sym}</span>
                   </div>
                 ))}
@@ -121,8 +121,8 @@ export default function SpatialServiceUniverse({ onOpenBooking }: { onOpenBookin
             </div>
 
             {/* Bottom Card Footer */}
-            <div className="pt-4 border-t border-[#DCE9E3]/70 flex items-center justify-between">
-              <span className="text-xs font-bold text-[#064E4B] group-hover:text-[#0F766E] inline-flex items-center gap-1.5 transition-colors">
+            <div className="pt-4 border-t border-[#E0F2FE]/70 flex items-center justify-between">
+              <span className="text-xs font-bold text-[#0A3977] group-hover:text-[#0077B6] inline-flex items-center gap-1.5 transition-colors">
                 <span>Inspect Dossier</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -132,7 +132,7 @@ export default function SpatialServiceUniverse({ onOpenBooking }: { onOpenBookin
                   e.stopPropagation();
                   onOpenBooking();
                 }}
-                className="text-xs font-mono font-bold px-3 py-1.5 rounded-xl bg-[#FAF8F5] hover:bg-[#064E4B] text-[#064E4B] hover:text-white border border-[#DCE9E3] transition-colors"
+                className="text-xs font-mono font-bold px-3 py-1.5 rounded-xl bg-[#F0F8FF] hover:bg-[#0A3977] text-[#0A3977] hover:text-white border border-[#E0F2FE] transition-colors"
               >
                 Book
               </button>
@@ -156,13 +156,13 @@ export default function SpatialServiceUniverse({ onOpenBooking }: { onOpenBookin
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.94, opacity: 0, y: 20 }}
               transition={{ duration: 0.3 }}
-              className="bg-white rounded-3xl p-6 sm:p-10 max-w-3xl w-full border border-[#DCE9E3] shadow-2xl space-y-6 max-h-[90vh] overflow-y-auto"
+              className="bg-white rounded-3xl p-6 sm:p-10 max-w-3xl w-full border border-[#E0F2FE] shadow-2xl space-y-6 max-h-[90vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Modal Header */}
-              <div className="flex items-center justify-between pb-4 border-b border-[#DCE9E3]">
+              <div className="flex items-center justify-between pb-4 border-b border-[#E0F2FE]">
                 <div className="flex items-center gap-2">
-                  <span className="px-3 py-1 rounded-full bg-[#064E4B] text-[#C6A56B] font-mono text-xs font-bold uppercase">
+                  <span className="px-3 py-1 rounded-full bg-[#0A3977] text-[#00AEEF] font-mono text-xs font-bold uppercase">
                     {activeServiceModal.category}
                   </span>
                   <span className="text-xs text-neutral-500 font-mono">
@@ -178,7 +178,7 @@ export default function SpatialServiceUniverse({ onOpenBooking }: { onOpenBookin
               </div>
 
               <div>
-                <h3 className="font-serif text-3xl font-bold text-[#064E4B] mb-3">
+                <h3 className="font-serif text-3xl font-bold text-[#0A3977] mb-3">
                   {activeServiceModal.title}
                 </h3>
                 <p className="text-sm text-neutral-700 leading-relaxed">
@@ -188,28 +188,28 @@ export default function SpatialServiceUniverse({ onOpenBooking }: { onOpenBookin
 
               {/* Assessment & Procedure Walkthrough */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="p-5 rounded-2xl bg-[#FAF8F5] border border-[#DCE9E3] space-y-2">
-                  <span className="text-xs font-mono font-bold uppercase text-[#064E4B] block">
+                <div className="p-5 rounded-2xl bg-[#F0F8FF] border border-[#E0F2FE] space-y-2">
+                  <span className="text-xs font-mono font-bold uppercase text-[#0A3977] block">
                     Diagnostic Assessment
                   </span>
                   <ul className="space-y-1.5 text-xs text-neutral-700">
                     {activeServiceModal.assessmentProcedure.map((proc, i) => (
                       <li key={i} className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#0F766E] shrink-0 mt-1.5" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#0077B6] shrink-0 mt-1.5" />
                         <span>{proc}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="p-5 rounded-2xl bg-[#064E4B]/5 border border-[#0F766E]/20 space-y-2">
-                  <span className="text-xs font-mono font-bold uppercase text-[#0F766E] block">
+                <div className="p-5 rounded-2xl bg-[#0A3977]/5 border border-[#0077B6]/20 space-y-2">
+                  <span className="text-xs font-mono font-bold uppercase text-[#0077B6] block">
                     Clinical Outcomes
                   </span>
                   <ul className="space-y-1.5 text-xs text-neutral-800">
                     {activeServiceModal.clinicalBenefits.map((ben, i) => (
                       <li key={i} className="flex items-start gap-2 font-medium">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[#0F766E] shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#0077B6] shrink-0 mt-0.5" />
                         <span>{ben}</span>
                       </li>
                     ))}
@@ -218,10 +218,10 @@ export default function SpatialServiceUniverse({ onOpenBooking }: { onOpenBookin
               </div>
 
               {/* Modal CTAs */}
-              <div className="pt-4 border-t border-[#DCE9E3] flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="pt-4 border-t border-[#E0F2FE] flex flex-col sm:flex-row items-center justify-between gap-4">
                 <Link
                   href={`/services/${activeServiceModal.slug}`}
-                  className="text-xs font-bold text-[#064E4B] hover:text-[#0F766E] inline-flex items-center gap-1.5"
+                  className="text-xs font-bold text-[#0A3977] hover:text-[#0077B6] inline-flex items-center gap-1.5"
                 >
                   <span>View Complete Service Dossier</span>
                   <ArrowRight className="w-4 h-4" />
@@ -233,9 +233,9 @@ export default function SpatialServiceUniverse({ onOpenBooking }: { onOpenBookin
                       setActiveServiceModal(null);
                       onOpenBooking();
                     }}
-                    className="flex-1 sm:flex-none px-6 py-3 rounded-xl bg-[#064E4B] hover:bg-[#0F766E] text-white font-bold text-xs transition-colors shadow-md flex items-center justify-center gap-2"
+                    className="flex-1 sm:flex-none px-6 py-3 rounded-xl bg-[#0A3977] hover:bg-[#0077B6] text-white font-bold text-xs transition-colors shadow-md flex items-center justify-center gap-2"
                   >
-                    <Calendar className="w-4 h-4 text-[#C6A56B]" />
+                    <Calendar className="w-4 h-4 text-[#00AEEF]" />
                     <span>Book Consultation</span>
                   </button>
                 </div>
