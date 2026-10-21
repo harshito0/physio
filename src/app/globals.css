@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+  --color-warm-ivory: #F8F6F0;
+  --color-deep-teal: #064E4B;
+  --color-primary-teal: #0F766E;
+  --color-light-teal: #14B8A6;
+  --color-muted-sage: #DCE9E3;
+  --color-champagne-gold: #C6A56B;
+  --color-gold-hover: #B59357;
+  --color-charcoal: #202A2A;
+  --color-charcoal-light: #2D3A3A;
+  --color-cream-surface: #FAF8F5;
+  --color-clinical-white: #FFFFFF;
+  --color-obsidian-teal: #042624;
+
+  --font-serif: var(--font-serif), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-sans), "Outfit", system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --bg-primary: #F8F6F0;
+  --text-primary: #202A2A;
+  --teal-deep: #064E4B;
+  --teal-primary: #0F766E;
+  --gold-accent: #C6A56B;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button, a, [role="button"], input[type="submit"], input[type="button"] {
+  cursor: pointer;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #DCE9E3;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0F766E;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(220, 233, 227, 0.7);
+}
+
+.glass-panel-dark {
+  background: rgba(6, 78, 75, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(198, 165, 107, 0.3);
+}
+
+.glass-panel-obsidian {
+  background: rgba(4, 38, 36, 0.92);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(15, 118, 110, 0.4);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #064E4B 0%, #0F766E 50%, #C6A56B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-metallic-text {
+  background: linear-gradient(135deg, #B59357 0%, #F5E6CA 50%, #C6A56B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.teal-glow {
+  box-shadow: 0 0 40px -10px rgba(15, 118, 110, 0.45);
+}
+
+.gold-glow {
+  box-shadow: 0 0 35px -8px rgba(198, 165, 107, 0.5);
+}
+
+/* 3D scene grid background */
+.bg-clinical-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(15, 118, 110, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 118, 110, 0.05) 1px, transparent 1px);
+}
+
+.bg-clinical-grid-dark {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(220, 233, 227, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(220, 233, 227, 0.04) 1px, transparent 1px);
+}
+
+
